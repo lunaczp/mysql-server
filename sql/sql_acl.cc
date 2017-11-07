@@ -11352,6 +11352,11 @@ static int native_password_authenticate(MYSQL_PLUGIN_VIO *vio,
   if (mpvio->scramble[SCRAMBLE_LENGTH])
     create_random_string(mpvio->scramble, SCRAMBLE_LENGTH, mpvio->rand);
 
+  /**
+    zhp
+	eventually it calls bcopy, by using len+1 gives a 0x0 end (NULL terminate),
+	but will this work expectly?
+  */
   /* send it to the client */
   if (mpvio->write_packet(mpvio, (uchar*) mpvio->scramble, SCRAMBLE_LENGTH + 1))
     DBUG_RETURN(CR_AUTH_HANDSHAKE);

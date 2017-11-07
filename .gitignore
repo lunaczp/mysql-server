@@ -1,3 +1,4 @@
+*.udb
 *-t
 *_test
 *.Plo
