@@ -2010,7 +2010,7 @@ err:
   thd->set_stmt_da(saved_da);
   my_message(my_errno, error_text, MYF(0));
   DBUG_VOID_RETURN;
-}
+}/* zhp end mysql_binlog_send */
 
 
 /**

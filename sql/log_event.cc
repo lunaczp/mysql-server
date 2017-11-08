@@ -1056,7 +1056,7 @@ bool Log_event::write_footer(IO_CACHE* file)
   }
   return 0;
 }
-
+/* zhp where event write actully happen */
 /*
   Log_event::write()
 */
