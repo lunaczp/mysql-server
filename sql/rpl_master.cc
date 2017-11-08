@@ -831,7 +831,10 @@ error_malformed_packet:
   DBUG_RETURN(true);
 }
 
-
+/**
+  zhp
+  send binlog
+*/
 void mysql_binlog_send(THD* thd, char* log_ident, my_off_t pos,
                        const Gtid_set* slave_gtid_executed, int flags)
 {
@@ -1075,6 +1078,12 @@ void mysql_binlog_send(THD* thd, char* log_ident, my_off_t pos,
                             observe_transmission))
     GOTO_ERR;
 
+  /*
+    zhp
+	binlog start:
+	1. rotate event
+	2. format event
+  */
   /*
     Tell the client about the log name with a fake Rotate event;
     this is needed even if we also send a Format_description_log_event
