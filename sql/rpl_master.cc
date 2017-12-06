@@ -733,7 +733,7 @@ static int send_last_skip_group_heartbeat(THD *thd, NET* net, String *packet,
     VAR[BYTES]= '\0';                                                   \
   } while (0)
 
-
+/*lux: com_binlog_dump*/
 bool com_binlog_dump(THD *thd, char *packet, uint packet_length)
 {
   DBUG_ENTER("com_binlog_dump");
@@ -753,7 +753,7 @@ bool com_binlog_dump(THD *thd, char *packet, uint packet_length)
     compatibility.  This has been fixed in the new protocol. @see
     com_binlog_dump_gtid().
   */
-  READ_INT(pos, 4);
+  READ_INT(pos, 4);/*lux 4 byte is too little,yes*/
   READ_INT(flags, 2);
   READ_INT(thd->server_id, 4);
 
@@ -832,7 +832,7 @@ error_malformed_packet:
 }
 
 /**
-  zhp
+  lux
   send binlog
 */
 void mysql_binlog_send(THD* thd, char* log_ident, my_off_t pos,
@@ -1079,7 +1079,7 @@ void mysql_binlog_send(THD* thd, char* log_ident, my_off_t pos,
     GOTO_ERR;
 
   /*
-    zhp
+    lux
 	binlog start:
 	1. rotate event
 	2. format event
