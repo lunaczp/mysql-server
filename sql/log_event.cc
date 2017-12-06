@@ -1148,7 +1148,7 @@ bool Log_event::write_header(IO_CACHE* file, ulong event_data_length)
   header[EVENT_TYPE_OFFSET]= get_type_code();
   int4store(header+ SERVER_ID_OFFSET, server_id);
   int4store(header+ EVENT_LEN_OFFSET, data_written);
-  int4store(header+ LOG_POS_OFFSET, log_pos);
+  int4store(header+ LOG_POS_OFFSET, log_pos);/*lux: log_pos is either 4byte or 8byte depended on platform, but here we hard-coded 4byte when writing to file. so when log_pos exceed 2^32, the actul number in log file will be overflow and truncated */
   /*
     recording checksum of FD event computed with dropped
     possibly active LOG_EVENT_BINLOG_IN_USE_F flag.

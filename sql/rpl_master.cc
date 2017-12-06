@@ -356,7 +356,7 @@ static uint8 get_binlog_checksum_value_at_connect(THD * thd)
     well-placed zeros was not possible as Rotate events have a variable-length
     part.
 */
-
+/*zhp fack rotate event*/
 static int fake_rotate_event(NET* net, String* packet, char* log_file_name,
                              ulonglong position, const char** errmsg,
                              uint8 checksum_alg_arg)
