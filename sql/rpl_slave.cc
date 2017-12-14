@@ -4143,7 +4143,7 @@ static int exec_relay_log_event(THD* thd, Relay_log_info* rli)
           ev->when.tv_sec == 0 || ev->get_type_code() == FORMAT_DESCRIPTION_EVENT ||
           ev->server_id == 0))
     {
-      rli->last_master_timestamp= ev->when.tv_sec + (time_t) ev->exec_time;
+      rli->last_master_timestamp= ev->when.tv_sec + (time_t) ev->exec_time;/*lux: 事件发生时刻+持续时间*/
       DBUG_ASSERT(rli->last_master_timestamp >= 0);
     }
 
