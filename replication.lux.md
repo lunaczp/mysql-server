@@ -5,4 +5,4 @@
 
 
 ## sub 
-- [seconds_behind_master](./seconds_behind_master.md)
+- [seconds_behind_master](./seconds_behind_master.lux.md)
