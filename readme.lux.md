@@ -1,6 +1,6 @@
 # learning mysql
 
-- [file list](./file_list.lux.md）
+- [file list](./file_list.lux.md)
 - [procedure analyze](./procedure.lux.md)
 - [replication protocal](./replication.lux.md)
 
