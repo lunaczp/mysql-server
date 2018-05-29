@@ -3682,7 +3682,7 @@ reexecute:
 
   thd->push_reprepare_observer(stmt_reprepare_observer);
 
-  error= execute(expanded_query, open_cursor) || thd->is_error();
+  error= execute(expanded_query, open_cursor) || thd->is_error();//lux execute
 
   thd->pop_reprepare_observer();
 
