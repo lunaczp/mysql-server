@@ -95,7 +95,7 @@ static bool cmp_buffer_with_ref(THD *thd, TABLE *table, TABLE_REF *tab_ref);
 
 void
 JOIN::exec()
-{
+{//lux select executor
   Opt_trace_context * const trace= &thd->opt_trace;
   Opt_trace_object trace_wrapper(trace);
   Opt_trace_object trace_exec(trace, "join_execution");
@@ -191,7 +191,7 @@ JOIN::exec()
   DBUG_PRINT("info", ("%s", thd->proc_info));
   result->send_result_set_metadata(*fields,
                                    Protocol::SEND_NUM_ROWS | Protocol::SEND_EOF);
-  error= do_select(this);
+  error= do_select(this);//lux executor select
   /* Accumulate the counts from all join iterations of all join parts. */
   thd->inc_examined_row_count(examined_rows);
   DBUG_PRINT("counts", ("thd->examined_row_count: %lu",
@@ -860,7 +860,7 @@ Next_select_func setup_end_select_func(JOIN *join, JOIN_TAB *tab)
 
 static int
 do_select(JOIN *join)
-{
+{//lux final select
   int rc= 0;
   enum_nested_loop_state error= NESTED_LOOP_OK;
   DBUG_ENTER("do_select");

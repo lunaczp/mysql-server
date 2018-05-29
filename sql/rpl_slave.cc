@@ -8079,7 +8079,7 @@ bool rpl_master_erroneous_autoinc(THD *thd)
   properly.
 */
 uint sql_slave_skip_counter;
-//lux start slave
+
 /**
   Execute a START SLAVE statement.
 
@@ -8094,7 +8094,7 @@ uint sql_slave_skip_counter;
   @retval 1 error
 */
 int start_slave(THD* thd , Master_info* mi,  bool net_report)
-{
+{//lux start slave
   int slave_errno= 0;
   int thread_mask;
   DBUG_ENTER("start_slave");

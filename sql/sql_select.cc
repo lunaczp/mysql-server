@@ -73,7 +73,7 @@ static void push_index_cond(JOIN_TAB *tab, uint keyno, bool other_tbls_ok,
 
 bool handle_select(THD *thd, select_result *result,
                    ulong setup_tables_done_option)
-{
+{//lux select handler
   bool res;
   LEX *lex= thd->lex;
   register SELECT_LEX *select_lex = &lex->select_lex;
@@ -107,7 +107,7 @@ bool handle_select(THD *thd, select_result *result,
 		      select_lex->having,
 		      select_lex->options | thd->variables.option_bits |
                       setup_tables_done_option,
-		      result, unit, select_lex);
+		      result, unit, select_lex);//lux 真正的select处理函数
   }
   DBUG_PRINT("info",("res: %d  report_error: %d", res,
 		     thd->is_error()));
@@ -1076,7 +1076,7 @@ mysql_prepare_select(THD *thd,
 
 static bool
 mysql_execute_select(THD *thd, SELECT_LEX *select_lex, bool free_join)
-{
+{//lux select的执行阶段
   bool err;
   JOIN* join= select_lex->join;
 
@@ -1156,7 +1156,7 @@ mysql_select(THD *thd,
              Item *having, ulonglong select_options,
              select_result *result, SELECT_LEX_UNIT *unit,
              SELECT_LEX *select_lex)
-{
+{//lux 真正的mysql select处理函数
   bool free_join= true;
   uint og_num= 0;
   ORDER *first_order= NULL;
@@ -1218,7 +1218,7 @@ mysql_select(THD *thd,
     query_cache_store_query(thd, thd->lex->query_tables);
   }
 
-  DBUG_RETURN(mysql_execute_select(thd, select_lex, free_join));
+  DBUG_RETURN(mysql_execute_select(thd, select_lex, free_join));//lux select
 }
 
 /*****************************************************************************
