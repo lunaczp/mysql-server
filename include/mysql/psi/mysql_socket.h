@@ -553,7 +553,7 @@ inline_mysql_socket_socket
   int domain, int type, int protocol)
 {
   MYSQL_SOCKET mysql_socket= MYSQL_INVALID_SOCKET;
-  mysql_socket.fd= socket(domain, type, protocol);
+  mysql_socket.fd= socket(domain, type, protocol);//lux socket
 
 #ifdef HAVE_PSI_SOCKET_INTERFACE
   if (likely(mysql_socket.fd != INVALID_SOCKET))

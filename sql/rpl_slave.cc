@@ -13,7 +13,7 @@
    along with this program; if not, write to the Free Software Foundation,
    51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA */
 
-
+//lux slave代码，io thread、sql thread
 /**
   @addtogroup Replication
   @{
@@ -341,7 +341,7 @@ static void init_slave_psi_keys(void)
 /* Initialize slave structures */
 
 int init_slave()
-{
+{//lux slave初始化
   DBUG_ENTER("init_slave");
   int error= 0;
   int thread_mask= SLAVE_SQL | SLAVE_IO;
@@ -1274,7 +1274,7 @@ terminate_slave_thread(THD *thd,
   DBUG_RETURN(0);
 }
 
-
+//lux 启动一个指定的线程，入口是h_func
 int start_slave_thread(
 #ifdef HAVE_PSI_INTERFACE
                        PSI_thread_key thread_key,
@@ -1315,7 +1315,7 @@ int start_slave_thread(
   DBUG_PRINT("info",("Creating new slave thread"));
   if ((error= mysql_thread_create(thread_key,
                           &th, &connection_attrib, h_func, (void*)mi)))
-  {
+  {//lux create new thread
     sql_print_error("Can't create slave thread (errno= %d).", error);
     if (start_lock)
       mysql_mutex_unlock(start_lock);
@@ -1355,7 +1355,7 @@ int start_slave_thread(
   DBUG_RETURN(0);
 }
 
-
+//lux 启动slave所有的线程：io thread、sql thread
 /*
   start_slave_threads()
 
@@ -2739,7 +2739,7 @@ int register_slave_on_master(MYSQL* mysql, Master_info *mi,
   DBUG_RETURN(0);
 }
 
-
+//zhp show slave status
 /**
   Execute a SHOW SLAVE STATUS statement.
 
@@ -4448,7 +4448,7 @@ static int try_to_reconnect(THD *thd, MYSQL *mysql, Master_info *mi,
   return 0;
 }
 
-
+//lux slave io thread
 /**
   Slave IO thread entry point.
 
@@ -4495,7 +4495,7 @@ pthread_handler_t handle_slave_io(void *arg)
   pthread_detach_this_thread();
   thd->thread_stack= (char*) &thd; // remember where our stack is
   mi->clear_error();
-  if (init_slave_thread(thd, SLAVE_THD_IO))
+  if (init_slave_thread(thd, SLAVE_THD_IO)) //lux slave thread 初始化
   {
     mysql_cond_broadcast(&mi->start_cond);
     mysql_mutex_unlock(&mi->run_lock);
@@ -8079,7 +8079,7 @@ bool rpl_master_erroneous_autoinc(THD *thd)
   properly.
 */
 uint sql_slave_skip_counter;
-
+//lux start slave
 /**
   Execute a START SLAVE statement.
 

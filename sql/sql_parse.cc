@@ -907,7 +907,7 @@ void cleanup_items(Item *item)
 */
 
 bool do_command(THD *thd)
-{
+{//lux 处理请求
   bool return_value;
   char *packet= 0;
   ulong packet_length;
@@ -1034,7 +1034,7 @@ bool do_command(THD *thd)
 
   DBUG_ASSERT(packet_length);
 
-  return_value= dispatch_command(command, thd, packet+1, (uint) (packet_length-1));
+  return_value= dispatch_command(command, thd, packet+1, (uint) (packet_length-1));//lux 处理请求 dispatch_command
 
 out:
   /* The statement instrumentation must be closed in all cases. */
@@ -1135,7 +1135,7 @@ static my_bool deny_updates_if_read_only_option(THD *thd,
 */
 bool dispatch_command(enum enum_server_command command, THD *thd,
 		      char* packet, uint packet_length)
-{
+{//lux 真正的请求处理
   NET *net= &thd->net;
   bool error= 0;
   DBUG_ENTER("dispatch_command");
@@ -1209,7 +1209,7 @@ bool dispatch_command(enum enum_server_command command, THD *thd,
   }
 
   switch (command) {
-  case COM_INIT_DB:
+  case COM_INIT_DB://lux init db;change db; use xxx
   {
     LEX_STRING tmp;
     status_var_increment(thd->status_var.com_stat[SQLCOM_CHANGE_DB]);
@@ -1223,14 +1223,14 @@ bool dispatch_command(enum enum_server_command command, THD *thd,
     break;
   }
 #ifdef HAVE_REPLICATION
-  case COM_REGISTER_SLAVE:
+  case COM_REGISTER_SLAVE://lux register slave
   {
     if (!register_slave(thd, (uchar*)packet, packet_length))
       my_ok(thd);
     break;
   }
 #endif
-  case COM_CHANGE_USER:
+  case COM_CHANGE_USER://lux change user
   {
     int auth_rc;
     status_var_increment(thd->status_var.com_other);
@@ -1308,7 +1308,7 @@ bool dispatch_command(enum enum_server_command command, THD *thd,
     mysqld_stmt_reset(thd, packet, packet_length);
     break;
   }
-  case COM_QUERY:
+  case COM_QUERY://lux 包括select insert...
   {
     DBUG_ASSERT(thd->m_digest == NULL);
     thd->m_digest= & thd->m_digest_state;
@@ -1337,7 +1337,7 @@ bool dispatch_command(enum enum_server_command command, THD *thd,
     if (parser_state.init(thd, thd->query(), thd->query_length()))
       break;
 
-    mysql_parse(thd, thd->query(), thd->query_length(), &parser_state);
+    mysql_parse(thd, thd->query(), thd->query_length(), &parser_state);//lux parse and execute
 
     while (!thd->killed && (parser_state.m_lip.found_semicolon != NULL) &&
            ! thd->is_error())
@@ -1551,7 +1551,7 @@ bool dispatch_command(enum enum_server_command command, THD *thd,
   case COM_BINLOG_DUMP_GTID:
     error= com_binlog_dump_gtid(thd, packet, packet_length);
     break;
-  case COM_BINLOG_DUMP:
+  case COM_BINLOG_DUMP://lux binlog dump
     error= com_binlog_dump(thd, packet, packet_length);
     break;
 #endif
@@ -1686,7 +1686,7 @@ bool dispatch_command(enum enum_server_command command, THD *thd,
 #endif
     break;
   }
-  case COM_PING:
+  case COM_PING: //lux ping
     status_var_increment(thd->status_var.com_other);
     my_ok(thd);				// Tell client we are alive
     break;
@@ -2289,7 +2289,7 @@ err:
 
 int
 mysql_execute_command(THD *thd)
-{
+{//lux 真正执行sql的地方
   int res= FALSE;
   int  up_result= 0;
   LEX  *lex= thd->lex;
@@ -2658,7 +2658,7 @@ mysql_execute_command(THD *thd)
     if ((res= select_precheck(thd, lex, all_tables, first_table)))
       break;
 
-    res= execute_sqlcom_select(thd, all_tables);
+    res= execute_sqlcom_select(thd, all_tables);//lux select
     break;
   }
 case SQLCOM_PREPARE:
@@ -2668,7 +2668,7 @@ case SQLCOM_PREPARE:
   }
   case SQLCOM_EXECUTE:
   {
-    mysql_sql_stmt_execute(thd);
+    mysql_sql_stmt_execute(thd);//lux execute
     break;
   }
   case SQLCOM_DEALLOCATE_PREPARE:
@@ -6265,7 +6265,7 @@ void mysql_init_multi_delete(LEX *lex)
 
 void mysql_parse(THD *thd, char *rawbuf, uint length,
                  Parser_state *parser_state)
-{
+{//lux parse a query (and execute)
   int error __attribute__((unused));
   DBUG_ENTER("mysql_parse");
 
@@ -6388,7 +6388,7 @@ void mysql_parse(THD *thd, char *rawbuf, uint length,
             error= 1;
           }
           else
-            error= mysql_execute_command(thd);
+            error= mysql_execute_command(thd);//lux 执行sql命令
           if (error == 0 &&
               thd->variables.gtid_next.type == GTID_GROUP &&
               thd->owned_gtid.sidno != 0 &&

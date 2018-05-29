@@ -21,6 +21,6 @@
 extern int mysqld_main(int argc, char **argv);
 
 int main(int argc, char **argv)
-{
+{//lux mysql入口
   return mysqld_main(argc, argv);
 }

@@ -64,7 +64,7 @@ bool mysql_manager_submit(void (*action)())
 }
 
 pthread_handler_t handle_manager(void *arg __attribute__((unused)))
-{
+{//lux handle manager 线程入口
   int error = 0;
   struct timespec abstime;
   bool reset_flush_time = TRUE;
@@ -130,7 +130,7 @@ pthread_handler_t handle_manager(void *arg __attribute__((unused)))
 
 /* Start handle manager thread */
 void start_handle_manager()
-{
+{//lux 启动handle manager线程
   DBUG_ENTER("start_handle_manager");
   abort_manager = false;
   if (flush_time && flush_time != ~(ulong) 0L)

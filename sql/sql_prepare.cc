@@ -2728,7 +2728,7 @@ void mysqld_stmt_execute(THD *thd, char *packet_arg, uint packet_length)
 */
 
 void mysql_sql_stmt_execute(THD *thd)
-{
+{//lux sql stmt execute
   LEX *lex= thd->lex;
   Prepared_statement *stmt;
   LEX_STRING *name= &lex->prepared_stmt_name;

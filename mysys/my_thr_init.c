@@ -114,7 +114,7 @@ void my_thread_global_reinit(void)
 */
 
 my_bool my_thread_global_init(void)
-{
+{//lux 线程相关，全局初始化
   int pth_ret;
 
   if (my_thread_global_init_done)
@@ -262,7 +262,7 @@ static my_thread_id thread_id= 0;
 */
 
 my_bool my_thread_init(void)
-{
+{//lux 线程初始化
   struct st_my_thread_var *tmp;
   my_bool error=0;
 

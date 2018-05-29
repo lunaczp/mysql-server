@@ -266,7 +266,7 @@ net_should_retry(NET *net, uint *retry_count __attribute__((unused)))
 /*****************************************************************************
 ** Write something to server/client buffer
 *****************************************************************************/
-
+//lux 写入网络
 /**
   Write a logical packet with packet header.
 

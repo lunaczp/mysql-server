@@ -890,7 +890,7 @@ void prepare_new_connection_state(THD* thd)
 */
 
 pthread_handler_t handle_one_connection(void *arg)
-{
+{//lux 处理连接入口
   THD *thd= (THD*) arg;
 
   mysql_thread_set_psi_id(thd->thread_id);
@@ -926,7 +926,7 @@ bool thd_is_connection_alive(THD *thd)
 }
 
 void do_handle_one_connection(THD *thd_arg)
-{
+{//lux 处理连接入口
   THD *thd= thd_arg;
 
   thd->thr_create_utime= my_micro_time();
@@ -976,10 +976,10 @@ void do_handle_one_connection(THD *thd_arg)
     if (rc)
       goto end_thread;
 
-    while (thd_is_connection_alive(thd))
+    while (thd_is_connection_alive(thd))//lux 只要连接alive，一直处理请求
     {
       mysql_audit_release(thd);
-      if (do_command(thd))
+      if (do_command(thd))//lux 处理连接里的请求
   break;
     }
     end_connection(thd);

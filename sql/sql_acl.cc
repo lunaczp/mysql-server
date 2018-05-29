@@ -5201,7 +5201,7 @@ void  grant_free(void)
 */
 
 my_bool grant_init()
-{
+{//lux 权限初始化
   THD  *thd;
   my_bool return_val;
   DBUG_ENTER("grant_init");

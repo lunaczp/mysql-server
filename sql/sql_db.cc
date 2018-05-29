@@ -1455,7 +1455,7 @@ cmp_db_names(const char *db1_name,
 */
 
 bool mysql_change_db(THD *thd, const LEX_STRING *new_db_name, bool force_switch)
-{
+{//lux use db的实现
   LEX_STRING new_db_file_name;
 
   Security_context *sctx= thd->security_ctx;

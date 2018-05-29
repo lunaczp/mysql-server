@@ -2207,7 +2207,7 @@ static void set_root(const char *path)
 #endif
 }
 
-
+//lux create socket
 static MYSQL_SOCKET create_socket(const struct addrinfo *addrinfo_list,
                                   int addr_family,
                                   struct addrinfo **use_addrinfo)
@@ -2253,7 +2253,7 @@ static MYSQL_SOCKET create_socket(const struct addrinfo *addrinfo_list,
 
 
 static void network_init(void)
-{
+{//lux 网络初始化
 #ifdef HAVE_SYS_UN_H
   struct sockaddr_un  UNIXaddr;
 #endif
@@ -2321,7 +2321,7 @@ static void network_init(void)
           dummy IPv6-socket. Do not instrument that socket by P_S.
         */
 
-        MYSQL_SOCKET s= mysql_socket_socket(0, AF_INET6, SOCK_STREAM, 0);
+        MYSQL_SOCKET s= mysql_socket_socket(0, AF_INET6, SOCK_STREAM, 0);//lux socket
 
         ipv6_available= mysql_socket_getfd(s) != INVALID_SOCKET;
 
@@ -2445,7 +2445,7 @@ static void network_init(void)
       Limit the sequence by mysqld_port_timeout (set --port-open-timeout=#).
     */
     for (waited= 0, retry= 1; ; retry++, waited+= this_wait)
-    {
+    {//lux bind
       if (((ret= mysql_socket_bind(ip_sock, a->ai_addr, a->ai_addrlen)) >= 0 ) ||
           (socket_errno != SOCKET_EADDRINUSE) ||
           (waited >= mysqld_port_timeout))
@@ -2462,7 +2462,7 @@ static void network_init(void)
       sql_print_error("Do you already have another mysqld server running on port: %d ?",mysqld_port);
       unireg_abort(1);
     }
-    if (mysql_socket_listen(ip_sock, (int)back_log) < 0)
+    if (mysql_socket_listen(ip_sock, (int)back_log) < 0)//lux listen
     {
       sql_perror("Can't start server: listen() on TCP/IP port");
       sql_print_error("listen() on TCP/IP failed with error %d",
@@ -3003,7 +3003,7 @@ extern "C" char *my_demangle(const char *mangled_name, int *status)
 #ifndef EMBEDDED_LIBRARY
 
 void my_init_signals(void)
-{
+{//lux 信号初始化
   sigset_t set;
   struct sigaction sa;
   DBUG_ENTER("my_init_signals");
@@ -3079,7 +3079,7 @@ void my_init_signals(void)
 
 
 static void start_signal_handler(void)
-{
+{//lux 启动信号处理线程
   int error;
   pthread_attr_t thr_attr;
   DBUG_ENTER("start_signal_handler");
@@ -3106,7 +3106,7 @@ static void start_signal_handler(void)
   mysql_mutex_lock(&LOCK_thread_count);
   if ((error= mysql_thread_create(key_thread_signal_hand,
                                   &signal_thread, &thr_attr, signal_hand, 0)))
-  {
+  {//lux 启动信号处理线程
     sql_print_error("Can't create interrupt-thread (error %d, errno: %d)",
                     error,errno);
     exit(1);
@@ -3122,7 +3122,7 @@ static void start_signal_handler(void)
 /** This threads handles all signals and alarms. */
 /* ARGSUSED */
 pthread_handler_t signal_hand(void *arg __attribute__((unused)))
-{
+{//lux 信号处理线程 signal_hand
   sigset_t set;
   int sig;
   my_thread_init();       // Init new thread
@@ -5198,7 +5198,7 @@ int win_main(int argc, char **argv)
 #else
 int mysqld_main(int argc, char **argv)
 #endif
-{
+{//lux mysqld 入口
   /*
     Perform basic thread library and malloc initialization,
     to be able to read defaults files and parse options.
@@ -5208,7 +5208,7 @@ int mysqld_main(int argc, char **argv)
 #ifndef _WIN32
   // For windows, my_init() is called from the win specific mysqld_main
   if (my_init())                 // init my_sys library & pthreads
-  {
+  {//lux 资源、变量初始化
     fprintf(stderr, "my_init() failed.");
     return 1;
   }
@@ -5229,7 +5229,7 @@ int mysqld_main(int argc, char **argv)
   system_charset_info= &my_charset_utf8_general_ci;
 
   init_sql_statement_names();
-  sys_var_init();
+  sys_var_init();//lux 系统变量初始化
 
   int ho_error;
 
@@ -5240,7 +5240,7 @@ int mysqld_main(int argc, char **argv)
   init_pfs_instrument_array();
 #endif /* WITH_PERFSCHEMA_STORAGE_ENGINE */
 
-  ho_error= handle_early_options();
+  ho_error= handle_early_options();//lux 命令行参数处理
 
   {
     ulong requested_open_files;
@@ -5361,7 +5361,7 @@ int mysqld_main(int argc, char **argv)
   if (init_common_variables())
     unireg_abort(1);        // Will do exit
 
-  my_init_signals();
+  my_init_signals();//lux  信号初始化
 
   size_t guardize= 0;
   int retval= pthread_attr_getguardsize(&connection_attrib, &guardize);
@@ -5435,7 +5435,7 @@ int mysqld_main(int argc, char **argv)
 
   if (opt_bin_log && server_id == 0)
   {
-    server_id= 1;
+    server_id= 1;//lux server id
 #ifdef EXTRA_DEBUG
     sql_print_warning("You have enabled the binary log, but you haven't set "
                       "server-id to a non-zero value: we force server id to 1; "
@@ -5461,7 +5461,7 @@ int mysqld_main(int argc, char **argv)
    */
   if (!opt_bootstrap)
   {
-    if (init_server_auto_options())
+    if (init_server_auto_options())//lux auto.cnf初始化
     {
       sql_print_error("Initialzation of the server's UUID failed because it could"
                       " not be read from the auto.cnf file. If this is a new"
@@ -5503,7 +5503,7 @@ int mysqld_main(int argc, char **argv)
         /Alfranio
       */
       if (gtid_mode > 0)
-      {
+      {//lux 写入prev_gtids事件
         global_sid_lock->wrlock();
         const Gtid_set *logged_gtids= gtid_state->get_logged_gtids();
         if (gtid_mode > 1 || !logged_gtids->is_empty())
@@ -5529,7 +5529,7 @@ int mysqld_main(int argc, char **argv)
 
   if (init_ssl())
     unireg_abort(1);
-  network_init();
+  network_init();//lux 网络初始化
 
 #ifdef __WIN__
   if (!opt_console)
@@ -5553,7 +5553,7 @@ int mysqld_main(int argc, char **argv)
     After this we can't quit by a simple unireg_abort
   */
   error_handler_hook= my_message_sql;
-  start_signal_handler();       // Creates pidfile
+  start_signal_handler();       // Creates pidfile //lux 信号处理
   sql_print_warning_hook = sql_print_warning;
 
   if (mysql_rm_tmp_tables() || acl_init(opt_noacl) ||
@@ -5572,10 +5572,10 @@ int mysqld_main(int argc, char **argv)
   }
 
   if (!opt_noacl)
-    (void) grant_init();
+    (void) grant_init();//lux 权限初始化
 
   if (!opt_bootstrap)
-    servers_init(0);
+    servers_init(0);//lux server init
 
   if (!opt_noacl)
   {
@@ -5589,8 +5589,8 @@ int mysqld_main(int argc, char **argv)
   if (opt_bootstrap)
     opt_skip_slave_start= 1;
 
-  check_binlog_cache_size(NULL);
-  check_binlog_stmt_cache_size(NULL);
+  check_binlog_cache_size(NULL);//lux binlog check
+  check_binlog_stmt_cache_size(NULL);//lux binlog check
 
   binlog_unsafe_map_init();
 
@@ -5603,7 +5603,7 @@ int mysqld_main(int argc, char **argv)
     /*
       init_slave() must be called after the thread keys are created.
     */
-    if (server_id != 0)
+    if (server_id != 0)//lux init slave
       init_slave(); /* Ignoring errors while configuring replication. */
   }
 
@@ -5676,7 +5676,7 @@ int mysqld_main(int argc, char **argv)
 #if defined(_WIN32) || defined(HAVE_SMEM)
   handle_connections_methods();
 #else
-  handle_connections_sockets();
+  handle_connections_sockets();//lux  处理连接
 #endif /* _WIN32 || HAVE_SMEM */
 
   /* (void) pthread_attr_destroy(&connection_attrib); */
@@ -5722,7 +5722,7 @@ int mysqld_main(int argc, char **argv)
   }
 #endif
   clean_up(1);
-  mysqld_exit(0);
+  mysqld_exit(0);//lux mysqld exit 退出
 }
 
 #endif /* !EMBEDDED_LIBRARY */
@@ -6048,7 +6048,7 @@ void handle_connection_in_main_thread(THD *thd)
 */
 
 void create_thread_to_handle_connection(THD *thd)
-{
+{//lux 一个线程处理一个连接
   mysql_mutex_assert_owner(&LOCK_thread_count);
   if (blocked_pthread_count >  wake_pthread)
   {
@@ -6070,7 +6070,7 @@ void create_thread_to_handle_connection(THD *thd)
                                     &thd->real_id, &connection_attrib,
                                     handle_one_connection,
                                     (void*) thd)))
-    {
+    {//lux cread thread
       /* purecov: begin inspected */
       DBUG_PRINT("error",
                  ("Can't create thread to handle request (error %d)",
@@ -6196,7 +6196,7 @@ inline void kill_broken_server()
 #ifndef EMBEDDED_LIBRARY
 
 void handle_connections_sockets()
-{
+{//lux 处理请求 main loop
   MYSQL_SOCKET sock= mysql_socket_invalid();
   MYSQL_SOCKET new_sock= mysql_socket_invalid();
   uint error_count=0;
@@ -6331,7 +6331,7 @@ void handle_connections_sockets()
     {
       size_socket length= sizeof(struct sockaddr_storage);
       new_sock= mysql_socket_accept(key_socket_client_connection, sock,
-                                    (struct sockaddr *)(&cAddr), &length);
+                                    (struct sockaddr *)(&cAddr), &length);//lux 接入连接
       if (mysql_socket_getfd(new_sock) != INVALID_SOCKET ||
           (socket_errno != SOCKET_EINTR && socket_errno != SOCKET_EAGAIN))
         break;

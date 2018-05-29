@@ -63,7 +63,7 @@ static MYSQL_FILE instrumented_stdin;
     @retval 1 Error. Couldn't initialize environment
 */
 my_bool my_init(void)
-{
+{//lux 资源、变量初始化
   char *str;
 
   if (my_init_done)
@@ -87,7 +87,7 @@ my_bool my_init(void)
   instrumented_stdin.m_psi= NULL;       /* not yet instrumented */
   mysql_stdin= & instrumented_stdin;
 
-  if (my_thread_global_init())
+  if (my_thread_global_init())//lux thread全局初始化
     return 1;
 
 #if defined(SAFE_MUTEX)
@@ -354,7 +354,7 @@ static void win_init_registry(void)
 
 
 static void my_win_init(void)
-{
+{//lux window下的初始化
   DBUG_ENTER("my_win_init");
 
 #if defined(_MSC_VER)

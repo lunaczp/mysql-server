@@ -110,4 +110,4 @@ static int exec_relay_log_event(THD* thd, Relay_log_info* rli)
 ```
 We see that `last_master_timestamp` is updated whenever exectuting a relay log event(except some event), and it equals to __the timestamp this event created on master__ plus its execution time
 
-![exec_relay_log_event](lux/exec_relay_log_event.png)
+![exec_relay_log_event](docLux/exec_relay_log_event.png)

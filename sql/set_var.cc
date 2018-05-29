@@ -57,7 +57,7 @@ static uchar *get_sys_var_length(const sys_var *var, size_t *length,
 sys_var_chain all_sys_vars = { NULL, NULL };
 
 int sys_var_init()
-{
+{//lux 系统变量初始化
   DBUG_ENTER("sys_var_init");
 
   /* Must be already initialized. */

@@ -567,7 +567,7 @@ typedef struct st_mysql_cond mysql_cond_t;
     inline_mysql_thread_create(K, P1, P2, P3, P4)
 #else
   #define mysql_thread_create(K, P1, P2, P3, P4) \
-    pthread_create(P1, P2, P3, P4)
+    pthread_create(P1, P2, P3, P4)//lux 创建线程
 #endif
 
 /**
