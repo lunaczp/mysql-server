@@ -73,7 +73,7 @@ static void push_index_cond(JOIN_TAB *tab, uint keyno, bool other_tbls_ok,
 
 bool handle_select(THD *thd, select_result *result,
                    ulong setup_tables_done_option)
-{//lux select handler
+{//lux select handler入口
   bool res;
   LEX *lex= thd->lex;
   register SELECT_LEX *select_lex = &lex->select_lex;
@@ -1097,7 +1097,7 @@ mysql_execute_select(THD *thd, SELECT_LEX *select_lex, bool free_join)
     free_join= false;
   }
   else
-    join->exec();
+    join->exec();//lux 执行
 
 err:
   if (free_join)
@@ -1177,7 +1177,7 @@ mysql_select(THD *thd,
   if (mysql_prepare_select(thd, tables, wild_num, fields,
                            conds, og_num, first_order, first_group, having,
                            select_options, result, unit,
-                           select_lex, &free_join))
+                           select_lex, &free_join))//lux prepare select
   {
     if (free_join)
     {
@@ -1218,7 +1218,7 @@ mysql_select(THD *thd,
     query_cache_store_query(thd, thd->lex->query_tables);
   }
 
-  DBUG_RETURN(mysql_execute_select(thd, select_lex, free_join));//lux select
+  DBUG_RETURN(mysql_execute_select(thd, select_lex, free_join));//lux select mysql_execute_select
 }
 
 /*****************************************************************************

@@ -1470,7 +1470,7 @@ bool dispatch_command(enum enum_server_command command, THD *thd,
       break;
     }
     packet= arg_end + 1;
-    mysql_reset_thd_for_next_command(thd);
+    mysql_reset_thd_for_next_command(thd);//lux go for next command
     lex_start(thd);
     /* Must be before we init the table list. */
     if (lower_case_table_names)
@@ -2606,7 +2606,7 @@ mysql_execute_command(THD *thd)
       goto error;
   }
 
-  switch (lex->sql_command) {
+  switch (lex->sql_command) {//lux 对具体的command分情况解析
 
   case SQLCOM_SHOW_STATUS:
   {
@@ -2658,7 +2658,7 @@ mysql_execute_command(THD *thd)
     if ((res= select_precheck(thd, lex, all_tables, first_table)))
       break;
 
-    res= execute_sqlcom_select(thd, all_tables);//lux select
+    res= execute_sqlcom_select(thd, all_tables);//lux 执行select：execute_sqlcom_select
     break;
   }
 case SQLCOM_PREPARE:
@@ -5098,7 +5098,7 @@ finish:
 }
 
 static bool execute_sqlcom_select(THD *thd, TABLE_LIST *all_tables)
-{
+{//lux 执行sqlcom_select
   LEX	*lex= thd->lex;
   select_result *result= lex->result;
   bool res;
@@ -5109,7 +5109,7 @@ static bool execute_sqlcom_select(THD *thd, TABLE_LIST *all_tables)
       param->select_limit=
         new Item_int((ulonglong) thd->variables.select_limit);
   }
-  if (!(res= open_normal_and_derived_tables(thd, all_tables, 0)))
+  if (!(res= open_normal_and_derived_tables(thd, all_tables, 0)))//lux 先打开表
   {
     if (lex->describe)
     {
@@ -5136,7 +5136,7 @@ static bool execute_sqlcom_select(THD *thd, TABLE_LIST *all_tables)
                new select_analyse(result, lex->proc_analyse)) == NULL)
           return true;
       }
-      res= handle_select(thd, result, 0);
+      res= handle_select(thd, result, 0);//lux 真正处理select handle_select
       delete analyse_result;
       if (save_result != lex->result)
         delete save_result;

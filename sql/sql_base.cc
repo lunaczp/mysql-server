@@ -4482,7 +4482,7 @@ open_and_process_table(THD *thd, LEX *lex, TABLE_LIST *tables,
                        Prelocking_strategy *prelocking_strategy,
                        bool has_prelocking_list,
                        Open_table_context *ot_ctx)
-{
+{//lux 打开并处理表
   bool error= FALSE;
   bool safe_to_ignore_table= FALSE;
   DBUG_ENTER("open_and_process_table");
@@ -4979,7 +4979,7 @@ open_tables_check_upgradable_mdl(THD *thd, TABLE_LIST *tables_start,
 
 bool open_tables(THD *thd, TABLE_LIST **start, uint *counter, uint flags,
                 Prelocking_strategy *prelocking_strategy)
-{
+{//lux 打开表 open_tables
   /*
     We use pointers to "next_global" member in the last processed TABLE_LIST
     element and to the "next" member in the last processed Sroutine_hash_entry
@@ -5776,7 +5776,7 @@ err:
 */
 
 bool open_normal_and_derived_tables(THD *thd, TABLE_LIST *tables, uint flags)
-{
+{//lux 打开普通表和衍生表（子查询中生成的临时表）
   DML_prelocking_strategy prelocking_strategy;
   MDL_savepoint mdl_savepoint= thd->mdl_context.mdl_savepoint();
   DBUG_ENTER("open_normal_and_derived_tables");

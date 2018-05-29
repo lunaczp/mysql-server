@@ -1598,7 +1598,7 @@ error:
 
 
 bool open_tmp_table(TABLE *table)
-{
+{//lux 打开临时表
   int error;
   if ((error=table->file->ha_open(table, table->s->table_name.str,O_RDWR,
                                   HA_OPEN_TMP_TABLE | HA_OPEN_INTERNAL_TABLE)))
@@ -1831,7 +1831,7 @@ bool instantiate_tmp_table(TABLE *table, KEY *keyinfo,
                            MI_COLUMNDEF **recinfo, 
                            ulonglong options, my_bool big_tables,
                            Opt_trace_context *trace)
-{
+{//lux 生成临时表
   if (table->s->db_type() == myisam_hton)
   {
     if (create_myisam_tmp_table(table, keyinfo, start_recinfo, recinfo,
@@ -1841,7 +1841,7 @@ bool instantiate_tmp_table(TABLE *table, KEY *keyinfo,
     empty_record(table);
   }
 
-  if (open_tmp_table(table))
+  if (open_tmp_table(table))//lux 打开临时表
   {
     table->file->ha_delete_table(table->s->table_name.str);
     return TRUE;

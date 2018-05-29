@@ -113,7 +113,7 @@ JOIN::exec()
   if (thd->lex->ignore)
     thd->lex->current_select->no_error= true;
 
-  if (prepare_result(&columns_list))
+  if (prepare_result(&columns_list))//lux 准备结果集
     DBUG_VOID_RETURN;
 
   if (select_lex->materialized_table_count)
@@ -191,7 +191,7 @@ JOIN::exec()
   DBUG_PRINT("info", ("%s", thd->proc_info));
   result->send_result_set_metadata(*fields,
                                    Protocol::SEND_NUM_ROWS | Protocol::SEND_EOF);
-  error= do_select(this);//lux executor select
+  error= do_select(this);//lux do_select
   /* Accumulate the counts from all join iterations of all join parts. */
   thd->inc_examined_row_count(examined_rows);
   DBUG_PRINT("counts", ("thd->examined_row_count: %lu",
@@ -868,7 +868,7 @@ do_select(JOIN *join)
   join->send_records=0;
   if (join->plan_is_const() && !join->need_tmp)
   {
-    Next_select_func end_select= setup_end_select_func(join, NULL);
+    Next_select_func end_select= setup_end_select_func(join, NULL);//lux 选择一个select function
     /*
       HAVING will be checked after processing aggregate functions,
       But WHERE should checkd here (we alredy have read tables)
@@ -2748,7 +2748,7 @@ pick_table_access_method(JOIN_TAB *tab)
 /* ARGSUSED */
 static enum_nested_loop_state
 end_send(JOIN *join, JOIN_TAB *join_tab, bool end_of_records)
-{
+{//lux end_send
   DBUG_ENTER("end_send");
   /*
     When all tables are const this function is called with jointab == NULL.

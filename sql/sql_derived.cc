@@ -324,7 +324,7 @@ bool mysql_derived_optimize(THD *thd, LEX *lex, TABLE_LIST *derived)
 */
 
 bool mysql_derived_create(THD *thd, LEX *lex, TABLE_LIST *derived)
-{
+{//lux 创建临时结果集
   TABLE *table= derived->table;
   SELECT_LEX_UNIT *unit= derived->get_unit();
   DBUG_ENTER("mysql_derived_create");
@@ -362,7 +362,7 @@ bool mysql_derived_create(THD *thd, LEX *lex, TABLE_LIST *derived)
                              thd->lex->select_lex.options |
                              thd->variables.option_bits |
                              TMP_TABLE_ALL_COLUMNS),
-                            thd->variables.big_tables, &thd->opt_trace))
+                            thd->variables.big_tables, &thd->opt_trace))//lux 生成临时表
     DBUG_RETURN(TRUE);
 
   table->file->extra(HA_EXTRA_WRITE_CACHE);

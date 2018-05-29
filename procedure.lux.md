@@ -8,3 +8,5 @@
 
 ## Execute a command like `select * from a`
 ![command execute](docLux/mysql_execute_command.png)
+![select 1](docLux/CalledBy-mysql_select.png)
+![select 2](docLux/CalledBy-do_select.png)
