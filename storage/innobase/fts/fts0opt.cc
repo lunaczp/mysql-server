@@ -2939,7 +2939,7 @@ os_thread_ret_t
 fts_optimize_thread(
 /*================*/
 	void*		arg)			/*!< in: work queue*/
-{
+{//lux innodb:optimize FTS tables线程
 	mem_heap_t*	heap;
 	ib_vector_t*	tables;
 	ib_alloc_t*	heap_alloc;

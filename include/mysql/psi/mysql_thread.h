@@ -1247,7 +1247,7 @@ static inline int inline_mysql_thread_create(
   PSI_thread_key key,
   pthread_t *thread, const pthread_attr_t *attr,
   void *(*start_routine)(void*), void *arg)
-{
+{//lux inline mysql thread create
   int result;
   result= PSI_THREAD_CALL(spawn_thread)(key, thread, attr, start_routine, arg);
   return result;

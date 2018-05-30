@@ -1813,7 +1813,7 @@ struct PFS_spawn_thread_arg
 };
 
 void* pfs_spawn_thread(void *arg)
-{
+{//lux pfs_spawan_thread ptf
   PFS_spawn_thread_arg *typed_arg= (PFS_spawn_thread_arg*) arg;
   void *user_arg;
   void *(*user_start_routine)(void*);
@@ -1857,7 +1857,7 @@ void* pfs_spawn_thread(void *arg)
   my_free(typed_arg);
 
   /* Then, execute the user code for this thread. */
-  (*user_start_routine)(user_arg);
+  (*user_start_routine)(user_arg);//lux 进入处理逻辑，比如handle_one_connection
 
   return NULL;
 }
@@ -1869,7 +1869,7 @@ void* pfs_spawn_thread(void *arg)
 static int spawn_thread_v1(PSI_thread_key key,
                            pthread_t *thread, const pthread_attr_t *attr,
                            void *(*start_routine)(void*), void *arg)
-{
+{//lux psi thread
   PFS_spawn_thread_arg *psi_arg;
   PFS_thread *parent;
 
@@ -1907,7 +1907,7 @@ static int spawn_thread_v1(PSI_thread_key key,
     psi_arg->m_hostname_length= 0;
   }
 
-  int result= pthread_create(thread, attr, pfs_spawn_thread, psi_arg);
+  int result= pthread_create(thread, attr, pfs_spawn_thread, psi_arg);//lux create thread using pthread
   if (unlikely(result != 0))
     my_free(psi_arg);
   return result;

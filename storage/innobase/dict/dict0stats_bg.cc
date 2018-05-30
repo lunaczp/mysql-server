@@ -333,7 +333,7 @@ DECLARE_THREAD(dict_stats_thread)(
 /*==============================*/
 	void*	arg __attribute__((unused)))	/*!< in: a dummy parameter
 						required by os_thread_create */
-{
+{//lux innodb:统计线程
 	ut_a(!srv_read_only_mode);
 
 	srv_dict_stats_thread_active = TRUE;

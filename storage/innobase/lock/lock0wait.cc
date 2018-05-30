@@ -482,7 +482,7 @@ DECLARE_THREAD(lock_wait_timeout_thread)(
 	void*	arg __attribute__((unused)))
 			/* in: a dummy parameter required by
 			os_thread_create */
-{
+{//lux innodb:lock检测线程
 	ib_int64_t	sig_count = 0;
 	os_event_t	event = lock_sys->timeout_event;
 

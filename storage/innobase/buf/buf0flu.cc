@@ -2387,7 +2387,7 @@ DECLARE_THREAD(buf_flush_page_cleaner_thread)(
 	void*	arg __attribute__((unused)))
 			/*!< in: a dummy parameter required by
 			os_thread_create */
-{
+{//lux innodb：刷盘线程，dirty page落盘
 	ulint	next_loop_time = ut_time_ms() + 1000;
 	ulint	n_flushed = 0;
 	ulint	last_activity = srv_get_activity_count();

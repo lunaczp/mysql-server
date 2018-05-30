@@ -1496,7 +1496,7 @@ DECLARE_THREAD(srv_monitor_thread)(
 	void*	arg __attribute__((unused)))
 			/*!< in: a dummy parameter required by
 			os_thread_create */
-{
+{//lux innodb:服务检测、信息输出线程
 	ib_int64_t	sig_count;
 	double		time_elapsed;
 	time_t		current_time;
@@ -1671,7 +1671,7 @@ DECLARE_THREAD(srv_error_monitor_thread)(
 	void*	arg __attribute__((unused)))
 			/*!< in: a dummy parameter required by
 			os_thread_create */
-{
+{//lux innodb:信号量检测线程
 	/* number of successive fatal timeouts observed */
 	ulint		fatal_cnt	= 0;
 	lsn_t		old_lsn;
@@ -2307,7 +2307,7 @@ DECLARE_THREAD(srv_master_thread)(
 	void*	arg __attribute__((unused)))
 			/*!< in: a dummy parameter required by
 			os_thread_create */
-{
+{//lux innodb: master thread
 	srv_slot_t*	slot;
 	ulint		old_activity_count = srv_get_activity_count();
 	ib_time_t	last_print_time;
@@ -2713,7 +2713,7 @@ DECLARE_THREAD(srv_purge_coordinator_thread)(
 /*=========================================*/
 	void*	arg __attribute__((unused)))	/*!< in: a dummy parameter
 						required by os_thread_create */
-{
+{//lux innodb：purge task协调者线程
 	srv_slot_t*	slot;
 	ulint           n_total_purged = ULINT_UNDEFINED;
 

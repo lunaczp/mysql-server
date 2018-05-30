@@ -484,7 +484,7 @@ static uchar *net_store_length_fast(uchar *packet, uint length)
 */
 
 void Protocol::end_statement()
-{
+{//lux 返回statement结果
   DBUG_ENTER("Protocol::end_statement");
   DBUG_ASSERT(! thd->get_stmt_da()->is_sent());
   bool error= FALSE;

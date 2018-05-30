@@ -5676,7 +5676,7 @@ int mysqld_main(int argc, char **argv)
 #if defined(_WIN32) || defined(HAVE_SMEM)
   handle_connections_methods();
 #else
-  handle_connections_sockets();//lux  处理连接
+  handle_connections_sockets();//lux  处理连接，所有请求的入口
 #endif /* _WIN32 || HAVE_SMEM */
 
   /* (void) pthread_attr_destroy(&connection_attrib); */
@@ -6070,7 +6070,7 @@ void create_thread_to_handle_connection(THD *thd)
                                     &thd->real_id, &connection_attrib,
                                     handle_one_connection,
                                     (void*) thd)))
-    {//lux cread thread
+    {//lux create thread
       /* purecov: begin inspected */
       DBUG_PRINT("error",
                  ("Can't create thread to handle request (error %d)",
@@ -6254,10 +6254,10 @@ void handle_connections_sockets()
 
   DBUG_PRINT("general",("Waiting for connections."));
   MAYBE_BROKEN_SYSCALL;
-  while (!abort_loop)
+  while (!abort_loop)//lux main loop 所有的事件都在这个循环里 main -> mysqld_main -> handle_connections_sockets -> whileLoop
   {
 #ifdef HAVE_POLL
-    retval= poll(fds, socket_count, -1);
+    retval= poll(fds, socket_count, -1);//lux let's poll
 #else
     readFDs=clientFDs;
 

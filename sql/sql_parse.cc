@@ -1020,7 +1020,7 @@ bool do_command(THD *thd)
   /* Do not rely on my_net_read, extra safety against programming errors. */
   packet[packet_length]= '\0';                  /* safety */
 
-  command= (enum enum_server_command) (uchar) packet[0];
+  command= (enum enum_server_command) (uchar) packet[0];//lux as:COM_QUERY
 
   if (command >= COM_END)
     command= COM_END;				// Wrong command
@@ -1767,7 +1767,7 @@ done:
   thd->update_server_status();
   if (thd->killed)
     thd->send_kill_message();
-  thd->protocol->end_statement();
+  thd->protocol->end_statement();//lux 返回结果
   query_cache_end_of_result(thd);
 
   if (!thd->is_error() && !thd->killed_errno())
@@ -1778,7 +1778,7 @@ done:
                       thd->get_stmt_da()->sql_errno() : 0,
                       command_name[command].str);
 
-  log_slow_statement(thd);
+  log_slow_statement(thd);//lux 记录慢查询
 
   THD_STAGE_INFO(thd, stage_cleaning_up);
 
@@ -6299,7 +6299,7 @@ void mysql_parse(THD *thd, char *rawbuf, uint length,
     const char *found_semicolon= parser_state->m_lip.found_semicolon;
     size_t      qlen= found_semicolon
                       ? (found_semicolon - thd->query())
-                      : thd->query_length();
+                      : thd->query_length();//lux 是否有分号（多条语句）
 
     if (!err)
     {

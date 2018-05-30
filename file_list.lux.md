@@ -24,3 +24,22 @@
 - `sql_db.cc` create,drop,use...db
 - `sql_select.cc` select sql
 - `sql_delete.cc` delete sql
+
+## Vio
+
+- `vioscocket.c` 虚拟io层
+    - read,write
+
+## Storage Engine
+
+### Innodb
+
+- `srv0start`
+    - io thread handler
+    
+    
+# Other
+
+## Debug
+
+- `dbug.c`  debug工具

@@ -467,7 +467,7 @@ DECLARE_THREAD(io_handler_thread)(
 /*==============================*/
 	void*	arg)	/*!< in: pointer to the number of the segment in
 			the aio array */
-{
+{//lux innodb:io handler thread
 	ulint	segment;
 
 	segment = *((ulint*) arg);

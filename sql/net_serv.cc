@@ -666,7 +666,7 @@ static my_bool net_read_raw_loop(NET *net, size_t count)
 
   while (count)
   {
-    size_t recvcnt= vio_read(net->vio, buf, count);
+    size_t recvcnt= vio_read(net->vio, buf, count);//lux vio read
 
     /* VIO_SOCKET_ERROR (-1) indicates an error. */
     if (recvcnt == VIO_SOCKET_ERROR)
@@ -748,7 +748,7 @@ static my_bool net_read_packet_header(NET *net)
     DBUG_ASSERT(server_extension->m_after_header != NULL);
 
     server_extension->m_before_header(net, user_data, count);
-    rc= net_read_raw_loop(net, count);
+    rc= net_read_raw_loop(net, count);//lux read loop
     server_extension->m_after_header(net, user_data, count, rc);
   }
   else
@@ -805,7 +805,7 @@ static my_bool net_read_packet_header(NET *net)
 */
 
 static ulong net_read_packet(NET *net, size_t *complen)
-{
+{//lux 从网络读取包
   size_t pkt_len, pkt_data_len;
 
   *complen= 0;
@@ -813,7 +813,7 @@ static ulong net_read_packet(NET *net, size_t *complen)
   net->reading_or_writing= 1;
 
   /* Retrieve packet length and number. */
-  if (net_read_packet_header(net))
+  if (net_read_packet_header(net))//lux 头部
     goto error;
 
   net->compress_pkt_nr= net->pkt_nr;
@@ -993,7 +993,7 @@ my_net_read(NET *net)
       }
 
       net->where_b=buf_length;
-      if ((packet_len= net_read_packet(net, &complen)) == packet_error)
+      if ((packet_len= net_read_packet(net, &complen)) == packet_error)//lux 从网络读取数据
       {
         MYSQL_NET_READ_DONE(1, 0);
         return packet_error;

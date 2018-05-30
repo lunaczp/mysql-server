@@ -99,7 +99,7 @@ int vio_socket_io_wait(Vio *vio, enum enum_vio_io_event event)
 
 
 size_t vio_read(Vio *vio, uchar *buf, size_t size)
-{
+{//lux vio read
   ssize_t ret;
   int flags= 0;
   DBUG_ENTER("vio_read");
@@ -120,7 +120,7 @@ size_t vio_read(Vio *vio, uchar *buf, size_t size)
       break;
 
     /* Wait for input data to become available. */
-    if ((ret= vio_socket_io_wait(vio, VIO_IO_EVENT_READ)))
+    if ((ret= vio_socket_io_wait(vio, VIO_IO_EVENT_READ)))//lux wait socket
       break;
   }
 
@@ -793,7 +793,7 @@ int vio_io_wait(Vio *vio, enum enum_vio_io_event event, int timeout)
 #else
 
 int vio_io_wait(Vio *vio, enum enum_vio_io_event event, int timeout)
-{
+{//lux vio wait
   int ret;
   struct timeval tm;
   my_socket fd;
@@ -837,7 +837,7 @@ int vio_io_wait(Vio *vio, enum enum_vio_io_event event, int timeout)
 
   /* The first argument is ignored on Windows. */
   ret= select(fd + 1, &readfds, &writefds, &exceptfds, 
-              (timeout >= 0) ? &tm : NULL);
+              (timeout >= 0) ? &tm : NULL);//lux vio read: select
 
   MYSQL_END_SOCKET_WAIT(locker, 0);
 
