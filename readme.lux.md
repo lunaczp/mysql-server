@@ -51,6 +51,7 @@ Bye
 
 ```
 
+- kill mysql server
 - Generated Trace File at `/tmp/mysql.trace`, see [here](docLux/mysqld.trace)
 
 
