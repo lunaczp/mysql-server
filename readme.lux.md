@@ -5,6 +5,55 @@
 - [replication protocal](./replication.lux.md)
 
 
+## Other
+
+### A debug Output Example
+- start mysql server with debug `./bin/mysqld_safe --port=3330 --debug`
+- connect and do stuff
+```
+$  mysql mysql -uroot -h127.0.0.1 -P3330 -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 1
+Server version: 5.6.24-debug-log Source distribution
+
+Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use test;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++----------------+
+| Tables_in_test |
++----------------+
+| a              |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> select * from a;
++----+------+
+| id | name |
++----+------+
+|  1 | a    |
++----+------+
+1 row in set (0.01 sec)
+
+mysql> exit;
+Bye
+
+```
+
+- Generated Trace File at `/tmp/mysql.trace`, see [here](docLux/mysqld.trace)
+
+
 ## toBeSolved
 
 - log_pos overflow, see:/sql/log_event.cc:1151
