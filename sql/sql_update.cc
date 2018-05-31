@@ -220,7 +220,7 @@ int mysql_update(THD *thd,
 		 ha_rows limit,
 		 enum enum_duplicates handle_duplicates, bool ignore,
                  ha_rows *found_return, ha_rows *updated_return)
-{
+{//lux update操作处理入口
   bool		using_limit= limit != HA_POS_ERROR;
   bool		safe_update= MY_TEST(thd->variables.option_bits & OPTION_SAFE_UPDATES);
   bool          used_key_is_modified= FALSE, transactional_table, will_batch;
@@ -248,7 +248,7 @@ int mysql_update(THD *thd,
 
   DBUG_ENTER("mysql_update");
 
-  if (open_normal_and_derived_tables(thd, table_list, 0))
+  if (open_normal_and_derived_tables(thd, table_list, 0))//lux 打开table
     DBUG_RETURN(1);
 
   if (table_list->multitable_view)
@@ -278,7 +278,7 @@ int mysql_update(THD *thd,
   want_privilege= (table_list->view ? UPDATE_ACL :
                    table_list->grant.want_privilege);
 #endif
-  if (mysql_prepare_update(thd, table_list, &conds, order_num, order))
+  if (mysql_prepare_update(thd, table_list, &conds, order_num, order))//lux 准备prepare
     DBUG_RETURN(1);
 
   old_covering_keys= table->covering_keys;		// Keys used in WHERE
@@ -358,7 +358,7 @@ int mysql_update(THD *thd,
     }
   }
 #endif
-  if (lock_tables(thd, table_list, thd->lex->table_count, 0))
+  if (lock_tables(thd, table_list, thd->lex->table_count, 0))//lux 锁表
     DBUG_RETURN(1);
 
   // Must be done after lock_tables()
@@ -739,7 +739,7 @@ int mysql_update(THD *thd,
       check_constant_expressions(values))
     read_removal= table->check_read_removal(select->quick->index);
 
-  while (!(error=info.read_record(&info)) && !thd->killed)
+  while (!(error=info.read_record(&info)) && !thd->killed)//lux 读
   {
     thd->inc_examined_row_count(1);
     bool skip_record;
@@ -845,7 +845,7 @@ int mysql_update(THD *thd,
 
       if (table->triggers &&
           table->triggers->process_triggers(thd, TRG_EVENT_UPDATE,
-                                            TRG_ACTION_AFTER, TRUE))
+                                            TRG_ACTION_AFTER, TRUE))//lux 调用触发器
       {
         error= 1;
         break;
@@ -999,7 +999,7 @@ int mysql_update(THD *thd,
       if (thd->binlog_query(THD::ROW_QUERY_TYPE,
                             thd->query(), thd->query_length(),
                             transactional_table, FALSE, FALSE, errcode))
-      {
+      {//lux 写入binlog
         error=1;				// Rollback update
       }
     }

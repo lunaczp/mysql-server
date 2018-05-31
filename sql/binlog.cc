@@ -8935,7 +8935,7 @@ void THD::issue_unsafe_warnings()
 int THD::binlog_query(THD::enum_binlog_query_type qtype, char const *query_arg,
                       ulong query_len, bool is_trans, bool direct, 
                       bool suppress_use, int errcode)
-{
+{//lux 写入binlog
   DBUG_ENTER("THD::binlog_query");
   DBUG_PRINT("enter", ("qtype: %s  query: '%s'",
                        show_query_type(qtype), query_arg));

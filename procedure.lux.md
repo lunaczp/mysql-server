@@ -1,5 +1,8 @@
 # Procedure Analyze 流程分析
 
+## Basic Flow
+- [Flow From Internal Manual](https://dev.mysql.com/doc/internals/en/guided-tour-flow.html)
+
 ## Slave startup
 ![start_slave_thread](docLux/start_slave_thread.png)
 

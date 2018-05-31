@@ -1,5 +1,23 @@
 # File List
 
+## Sql
+
+- `sql_db.cc` create,drop,use...db
+- `sql_select.cc` select sql
+- `sql_delete.cc` delete sql
+
+## Vio
+
+- `vioscocket.c` 虚拟io层
+    - read,write
+    
+
+## Storage Engine
+### Innodb
+
+- `srv0start`
+    - io thread handler
+    
 
 ## Thread
 
@@ -19,30 +37,11 @@
 
 - `log_event.cc` binlog事件实现集
 
-## Sql
-
-- `sql_db.cc` create,drop,use...db
-- `sql_select.cc` select sql
-- `sql_delete.cc` delete sql
-
-## Vio
-
-- `vioscocket.c` 虚拟io层
-    - read,write
-    
-
-## Storage Engine
-
-### Innodb
-
-- `srv0start`
-    - io thread handler
     
     
-# Other
-
+## Other
 - [sql/table.cc](sql/table.cc) 建表相关
 
-## Debug
+### Debug
 
 - `dbug.c`  debug工具
