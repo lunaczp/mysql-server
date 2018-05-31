@@ -2931,7 +2931,7 @@ void append_unescaped(String *res, const char *pos, uint length)
 File create_frm(THD *thd, const char *name, const char *db,
                 const char *table, uint reclength, uchar *fileinfo,
   		HA_CREATE_INFO *create_info, uint keys, KEY *key_info)
-{
+{//lux 建表的时候，会生成一个frm文件，记录表结构。比如表user，会对应一个user.frm
   register File file;
   ulong length;
   uchar fill[IO_SIZE];

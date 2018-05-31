@@ -29,6 +29,7 @@
 
 - `vioscocket.c` 虚拟io层
     - read,write
+    
 
 ## Storage Engine
 
@@ -39,6 +40,8 @@
     
     
 # Other
+
+- [sql/table.cc](sql/table.cc) 建表相关
 
 ## Debug
 
