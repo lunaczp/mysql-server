@@ -1308,7 +1308,7 @@ bool dispatch_command(enum enum_server_command command, THD *thd,
     mysqld_stmt_reset(thd, packet, packet_length);
     break;
   }
-  case COM_QUERY://lux 包括select insert...
+  case COM_QUERY://lux query
   {
     DBUG_ASSERT(thd->m_digest == NULL);
     thd->m_digest= & thd->m_digest_state;
@@ -1337,7 +1337,7 @@ bool dispatch_command(enum enum_server_command command, THD *thd,
     if (parser_state.init(thd, thd->query(), thd->query_length()))
       break;
 
-    mysql_parse(thd, thd->query(), thd->query_length(), &parser_state);//lux parse and execute
+    mysql_parse(thd, thd->query(), thd->query_length(), &parser_state);//lux 执行命令。parse and execute
 
     while (!thd->killed && (parser_state.m_lip.found_semicolon != NULL) &&
            ! thd->is_error())
@@ -2289,7 +2289,7 @@ err:
 
 int
 mysql_execute_command(THD *thd)
-{//lux 真正执行sql的地方
+{//lux 真正执行命令的地方,所有的mqsql命令：增删改查，进程查看，系统信息查看，，，
   int res= FALSE;
   int  up_result= 0;
   LEX  *lex= thd->lex;
@@ -3431,7 +3431,7 @@ end_with_restore_list:
       DBUG_PRINT("debug", ("Just after generate_incident()"));
     }
 #endif
-  case SQLCOM_INSERT:
+  case SQLCOM_INSERT://lux insert
   {
     DBUG_ASSERT(first_table == all_tables && first_table != 0);
 
@@ -3452,7 +3452,7 @@ end_with_restore_list:
     MYSQL_INSERT_START(thd->query());
     res= mysql_insert(thd, all_tables, lex->field_list, lex->many_values,
 		      lex->update_list, lex->value_list,
-                      lex->duplicates, lex->ignore);
+                      lex->duplicates, lex->ignore);//lux mysql insert
     MYSQL_INSERT_DONE(res, (ulong) thd->get_row_count_func());
     /*
       If we have inserted into a VIEW, and the base table has
@@ -3566,7 +3566,7 @@ end_with_restore_list:
 
     break;
   }
-  case SQLCOM_DELETE:
+  case SQLCOM_DELETE://lux delete
   {
     DBUG_ASSERT(first_table == all_tables && first_table != 0);
     if ((res= delete_precheck(thd, all_tables)))
@@ -3577,7 +3577,7 @@ end_with_restore_list:
     MYSQL_DELETE_START(thd->query());
     res = mysql_delete(thd, all_tables, select_lex->where,
                        &select_lex->order_list,
-                       unit->select_limit_cnt, select_lex->options);
+                       unit->select_limit_cnt, select_lex->options);//lux mysql delete
     MYSQL_DELETE_DONE(res, (ulong) thd->get_row_count_func());
     break;
   }
@@ -3653,7 +3653,7 @@ end_with_restore_list:
 			lex->drop_temporary);
   }
   break;
-  case SQLCOM_SHOW_PROCESSLIST:
+  case SQLCOM_SHOW_PROCESSLIST://lux show processlist
     if (!thd->security_ctx->priv_user[0] &&
         check_global_access(thd,PROCESS_ACL))
       break;
@@ -4267,12 +4267,12 @@ end_with_restore_list:
     break;
   }
 #endif
-  case SQLCOM_BEGIN:
+  case SQLCOM_BEGIN://lux begin
     if (trans_begin(thd, lex->start_transaction_opt))
       goto error;
     my_ok(thd);
     break;
-  case SQLCOM_COMMIT:
+  case SQLCOM_COMMIT://lux commit
   {
     DBUG_ASSERT(thd->lock == NULL ||
                 thd->locked_tables_mode == LTM_LOCK_TABLES);
@@ -6265,7 +6265,7 @@ void mysql_init_multi_delete(LEX *lex)
 
 void mysql_parse(THD *thd, char *rawbuf, uint length,
                  Parser_state *parser_state)
-{//lux parse a query (and execute)
+{//lux parse a query and execute
   int error __attribute__((unused));
   DBUG_ENTER("mysql_parse");
 

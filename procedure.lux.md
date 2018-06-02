@@ -14,3 +14,7 @@
 ![command execute](docLux/mysql_execute_command.png)
 ![select 1](docLux/CalledBy-mysql_select.png)
 ![select 2](docLux/CalledBy-do_select.png)
+
+__所有的命令执行：增删改查，show xxx，等等都在`sql_parse.cc:mysql_execute_command`__
+
+
