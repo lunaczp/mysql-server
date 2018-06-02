@@ -659,10 +659,10 @@ net_write_packet(NET *net, const uchar *packet, size_t length)
 */
 
 static my_bool net_read_raw_loop(NET *net, size_t count)
-{
+{//lux 底层读取函数：从网络读取指定字节。（不关心上层协议）
   bool eof= false;
   unsigned int retry_count= 0;
-  uchar *buf= net->buff + net->where_b;
+  uchar *buf= net->buff + net->where_b;//lux 缓冲区偏移
 
   while (count)
   {
@@ -690,7 +690,7 @@ static my_bool net_read_raw_loop(NET *net, size_t count)
   }
 
   /* On failure, propagate the error code. */
-  if (count)
+  if (count)//lux count非0，读取失败.(读取成功，count应该为0)
   {
     /* Socket should be closed. */
     net->error= 2;
@@ -728,9 +728,9 @@ static my_bool net_read_raw_loop(NET *net, size_t count)
 */
 
 static my_bool net_read_packet_header(NET *net)
-{
+{//lux 读取一个myql protocol packet header
   uchar pkt_nr;
-  size_t count= NET_HEADER_SIZE;
+  size_t count= NET_HEADER_SIZE;//lux packet header size
   my_bool rc;
 
   if (net->compress)
@@ -754,21 +754,21 @@ static my_bool net_read_packet_header(NET *net)
   else
 #endif
   {
-    rc= net_read_raw_loop(net, count);
+    rc= net_read_raw_loop(net, count);//lux 读
   }
 
   if (rc)
-    return TRUE;
-
+    return TRUE;//lux 一切正常。
+//lux 下面处理不正常的情况
   DBUG_DUMP("packet_header", net->buff + net->where_b, NET_HEADER_SIZE);
 
-  pkt_nr= net->buff[net->where_b + 3];
+  pkt_nr= net->buff[net->where_b + 3];//第3个字节是序列号 https://dev.mysql.com/doc/internals/en/mysql-packet.html
 
   /*
     Verify packet serial number against the truncated packet counter.
     The local packet counter must be truncated since its not reset.
   */
-  if (pkt_nr != (uchar) net->pkt_nr)
+  if (pkt_nr != (uchar) net->pkt_nr)//lux 是不是序列号不对
   {
     /* Not a NET error on the client. XXX: why? */
 #if defined(MYSQL_SERVER)
@@ -789,7 +789,7 @@ static my_bool net_read_packet_header(NET *net)
 
   net->pkt_nr++;
 
-  return FALSE;
+  return FALSE;//lux 返回失败
 }
 
 
@@ -805,12 +805,12 @@ static my_bool net_read_packet_header(NET *net)
 */
 
 static ulong net_read_packet(NET *net, size_t *complen)
-{//lux 从网络读取包
+{//lux 从网络读取一个包
   size_t pkt_len, pkt_data_len;
 
   *complen= 0;
 
-  net->reading_or_writing= 1;
+  net->reading_or_writing= 1;//lux 标记开始
 
   /* Retrieve packet length and number. */
   if (net_read_packet_header(net))//lux 头部
@@ -838,7 +838,7 @@ static ulong net_read_packet(NET *net, size_t *complen)
 #endif
 
   /* The length of the packet that follows. */
-  pkt_len= uint3korr(net->buff+net->where_b);
+  pkt_len= uint3korr(net->buff+net->where_b);//lux 前3字节是包长，小端序 https://dev.mysql.com/doc/internals/en/mysql-packet.html
 
   /* End of big multi-packet. */
   if (!pkt_len)
@@ -882,7 +882,7 @@ error:
 
 ulong
 my_net_read(NET *net)
-{
+{//lux 读取一个完整包（处理合并、解压缩等）
   size_t len, complen;
 
   MYSQL_NET_READ_START();

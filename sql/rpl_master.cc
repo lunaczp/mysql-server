@@ -122,7 +122,7 @@ void end_slave_list()
 */
 
 int register_slave(THD* thd, uchar* packet, uint packet_length)
-{
+{//lux register slave
   int res;
   SLAVE_INFO *si;
   uchar *p= packet, *p_end= packet + packet_length;
@@ -141,7 +141,7 @@ int register_slave(THD* thd, uchar* packet, uint packet_length)
     return 1;
   }
 
-  thd->server_id= si->server_id= uint4korr(p);
+  thd->server_id= si->server_id= uint4korr(p);//lux：记录改slave的server_id到线程
   p+= 4;
   get_object(p,si->host, "Failed to register slave: too long 'report-host'");
   get_object(p,si->user, "Failed to register slave: too long 'report-user'");
@@ -162,8 +162,8 @@ int register_slave(THD* thd, uchar* packet, uint packet_length)
   si->thd= thd;
 
   mysql_mutex_lock(&LOCK_slave_list);
-  unregister_slave(thd, false, false/*need_lock_slave_list=false*/);
-  res= my_hash_insert(&slave_list, (uchar*) si);
+  unregister_slave(thd, false, false/*need_lock_slave_list=false*/);//lux 如果存在，先删除。
+  res= my_hash_insert(&slave_list, (uchar*) si);//lux 注册slave
   mysql_mutex_unlock(&LOCK_slave_list);
   return res;
 

@@ -928,7 +928,7 @@ bool do_command(THD *thd)
     the client, the connection is closed or "net_wait_timeout"
     number of seconds has passed.
   */
-  my_net_set_read_timeout(net, thd->variables.net_wait_timeout);
+  my_net_set_read_timeout(net, thd->variables.net_wait_timeout);//lux 设置读取超时时间。
 
   /*
     XXX: this code is here only to clear possible errors of init_connect. 
@@ -937,7 +937,7 @@ bool do_command(THD *thd)
   thd->clear_error();				// Clear error message
   thd->get_stmt_da()->reset_diagnostics_area();
 
-  net_new_transaction(net);
+  net_new_transaction(net);//lux 初始化
 
   /*
     Synchronization point for testing of KILL_CONNECTION.
@@ -967,7 +967,7 @@ bool do_command(THD *thd)
     See init_net_server_extension()
   */
   thd->m_server_idle= true;
-  packet_length= my_net_read(net);
+  packet_length= my_net_read(net);//lux 读取一个包。从网络/Client端接受命令。阻塞（直到有新的数据包。client建立起连接后，可以发送命令或者不发，就好像你打开了一个mysql终端，连接上，只是开着，不操作而已）。
   thd->m_server_idle= false;
 
   if (packet_length == packet_error)
@@ -1020,7 +1020,7 @@ bool do_command(THD *thd)
   /* Do not rely on my_net_read, extra safety against programming errors. */
   packet[packet_length]= '\0';                  /* safety */
 
-  command= (enum enum_server_command) (uchar) packet[0];//lux as:COM_QUERY
+  command= (enum enum_server_command) (uchar) packet[0];//lux 第一字节代表了命令，如COM_QUERY。https://dev.mysql.com/doc/internals/en/command-phase.html
 
   if (command >= COM_END)
     command= COM_END;				// Wrong command
@@ -1135,7 +1135,7 @@ static my_bool deny_updates_if_read_only_option(THD *thd,
 */
 bool dispatch_command(enum enum_server_command command, THD *thd,
 		      char* packet, uint packet_length)
-{//lux 真正的请求处理
+{//lux 真正的请求处理，处理指定的命令。
   NET *net= &thd->net;
   bool error= 0;
   DBUG_ENTER("dispatch_command");
@@ -1208,14 +1208,14 @@ bool dispatch_command(enum enum_server_command command, THD *thd,
     goto done;
   }
 
-  switch (command) {
-  case COM_INIT_DB://lux init db;change db; use xxx
+  switch (command) {//lux 处理接收到的命令
+	  case COM_INIT_DB://lux init db; happens when u type: use xxx
   {
     LEX_STRING tmp;
     status_var_increment(thd->status_var.com_stat[SQLCOM_CHANGE_DB]);
     thd->convert_string(&tmp, system_charset_info,
 			packet, packet_length, thd->charset());
-    if (!mysql_change_db(thd, &tmp, FALSE))
+    if (!mysql_change_db(thd, &tmp, FALSE))//lux do it
     {
       general_log_write(thd, command, thd->db, thd->db_length);
       my_ok(thd);

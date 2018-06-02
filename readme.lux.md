@@ -1,5 +1,6 @@
 # learning mysql
 
+- [protocol basic](./protocol_basic.lux.md)
 - [file list](./file_list.lux.md)
 - [procedure analyze](./procedure.lux.md)
 - [replication protocal](./replication.lux.md)

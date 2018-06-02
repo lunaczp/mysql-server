@@ -1284,7 +1284,7 @@ static void mysql_change_db_impl(THD *thd,
                                  LEX_STRING *new_db_name,
                                  ulong new_db_access,
                                  const CHARSET_INFO *new_db_charset)
-{
+{//lux change db
   /* 1. Change current database in THD. */
 
   if (new_db_name == NULL)
@@ -1316,7 +1316,7 @@ static void mysql_change_db_impl(THD *thd,
     if (thd->db)
       my_free(thd->db);
     DEBUG_SYNC(thd, "after_freeing_thd_db");
-    thd->reset_db(new_db_name->str, new_db_name->length);
+    thd->reset_db(new_db_name->str, new_db_name->length);//lux change db here
     mysql_mutex_unlock(&thd->LOCK_thd_data);
   }
 
@@ -1603,7 +1603,7 @@ bool mysql_change_db(THD *thd, const LEX_STRING *new_db_name, bool force_switch)
 
   db_default_cl= get_default_db_collation(thd, new_db_file_name.str);
 
-  mysql_change_db_impl(thd, &new_db_file_name, db_access, db_default_cl);
+  mysql_change_db_impl(thd, &new_db_file_name, db_access, db_default_cl);//lux chagne happens here
 
   DBUG_RETURN(FALSE);
 }

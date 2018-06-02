@@ -227,7 +227,7 @@ void mysql_audit_notify(THD *thd, uint event_class, uint event_subtype, ...)
 */
 
 void mysql_audit_release(THD *thd)
-{
+{//lux 权限审核
   plugin_ref *plugins, *plugins_last;
   
   if (!thd || !(thd->audit_class_plugins.elements))

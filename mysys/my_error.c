@@ -166,7 +166,7 @@ const char *my_get_err_msg(int nr)
 */
 
 void my_error(int nr, myf MyFlags, ...)
-{
+{//lux 输出错误信息
   const char *format;
   va_list args;
   char ebuff[ERRMSGSIZE];

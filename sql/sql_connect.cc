@@ -890,7 +890,7 @@ void prepare_new_connection_state(THD* thd)
 */
 
 pthread_handler_t handle_one_connection(void *arg)
-{//lux 处理连接入口
+{//lux 处理连接入口（线程入口，一个连接启动一个线程）.一个连接就是一个客户端。比如通过fpm连接过来，或者命令行mysql连接。连接建立后，就可以进行交互了（建表、查询、增删改、、、）。
   THD *thd= (THD*) arg;
 
   mysql_thread_set_psi_id(thd->thread_id);
@@ -976,17 +976,17 @@ void do_handle_one_connection(THD *thd_arg)
     if (rc)
       goto end_thread;
 
-    while (thd_is_connection_alive(thd))//lux 只要连接alive，一直处理请求
+    while (thd_is_connection_alive(thd))//lux 只要连接alive，一直处理请求。比如通过命令行mysql连接过来，只要不退出，就可以执行命令。或者通过Sequel Pro打开一个连接，就可以操作了。
     {
-      mysql_audit_release(thd);
-      if (do_command(thd))//lux 处理连接里的请求
+      mysql_audit_release(thd);//lux 权限审核
+      if (do_command(thd))//lux 处理请求
   break;
-    }
+    }//lux 连接dead，下面清理并关闭线程（自己）。
     end_connection(thd);
 
 end_thread:
     close_connection(thd);
-    if (MYSQL_CALLBACK_ELSE(thread_scheduler, end_thread, (thd, 1), 0))
+    if (MYSQL_CALLBACK_ELSE(thread_scheduler, end_thread, (thd, 1), 0))//lux end_thread回调
       return;                                 // Probably no-threads
 
     /*

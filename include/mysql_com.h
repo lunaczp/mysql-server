@@ -315,8 +315,8 @@ typedef struct st_vio Vio;
 
 typedef struct st_net {
 #if !defined(CHECK_EMBEDDED_DIFFERENCES) || !defined(EMBEDDED_LIBRARY)
-  Vio *vio;
-  unsigned char *buff,*buff_end,*write_pos,*read_pos;
+  Vio *vio;//lux vio句柄
+  unsigned char *buff,*buff_end,*write_pos,*read_pos;//lux 缓存区
   my_socket fd;					/* For Perl DBI/dbd */
   /*
     The following variable is set if we are doing several queries in one
@@ -361,7 +361,7 @@ typedef struct st_net {
     to maintain the server internal instrumentation for the connection.
   */
   void *extension;
-} NET;
+} NET;//lux 网络流结构体
 
 
 #define packet_error (~(unsigned long) 0)

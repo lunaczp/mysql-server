@@ -6070,7 +6070,7 @@ void create_thread_to_handle_connection(THD *thd)
                                     &thd->real_id, &connection_attrib,
                                     handle_one_connection,
                                     (void*) thd)))
-    {//lux create thread
+    {//lux 新建一个线程，处理新来的连接
       /* purecov: begin inspected */
       DBUG_PRINT("error",
                  ("Can't create thread to handle request (error %d)",

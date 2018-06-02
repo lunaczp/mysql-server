@@ -2,6 +2,7 @@
 
 ## Basic Flow
 - [Flow From Internal Manual](https://dev.mysql.com/doc/internals/en/guided-tour-flow.html)
+- [Flow of A Insert Operation](https://dev.mysql.com/doc/internals/en/guided-tour-skeleton.html)
 
 ## Slave startup
 ![start_slave_thread](docLux/start_slave_thread.png)
