@@ -1,0 +1,1774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="MySQL" targetName="test-mtr" />
+      <config projectName="MySQL" targetName="strings" />
+      <config projectName="MySQL" targetName="archive" />
+      <config projectName="MySQL" targetName="master" />
+      <config projectName="MySQL" targetName="bug25714" />
+      <config projectName="MySQL" targetName="validate_password" />
+      <config projectName="MySQL" targetName="vio" />
+      <config projectName="MySQL" targetName="clientlib" />
+      <config projectName="MySQL" targetName="auth" />
+      <config projectName="MySQL" targetName="mysqld" />
+      <config projectName="MySQL" targetName="tags" />
+      <config projectName="MySQL" targetName="zlib" />
+      <config projectName="MySQL" targetName="myisam" />
+      <config projectName="MySQL" targetName="my_safe_process" />
+      <config projectName="MySQL" targetName="mysqlshow" />
+      <config projectName="MySQL" targetName="conf_to_src" />
+      <config projectName="MySQL" targetName="re" />
+      <config projectName="MySQL" targetName="mysqlclient" />
+      <config projectName="MySQL" targetName="GenError" />
+      <config projectName="MySQL" targetName="regex" />
+      <config projectName="MySQL" targetName="mysys" />
+      <config projectName="MySQL" targetName="perfschema" />
+      <config projectName="MySQL" targetName="taocrypt" />
+      <config projectName="MySQL" targetName="mysqlbinlog" />
+      <config projectName="MySQL" targetName="pfs_account-oom-t" />
+      <config projectName="MySQL" targetName="todo-t" />
+      <config projectName="MySQL" targetName="audit_null" />
+      <config projectName="MySQL" targetName="mysql_embedded" />
+      <config projectName="MySQL" targetName="mysql_config_editor" />
+      <config projectName="MySQL" targetName="edit" />
+      <config projectName="MySQL" targetName="semisync_master" />
+      <config projectName="MySQL" targetName="pfs_instr_class-oom-t" />
+      <config projectName="MySQL" targetName="daemon_example" />
+      <config projectName="MySQL" targetName="slave" />
+      <config projectName="MySQL" targetName="mysqltest" />
+      <config projectName="MySQL" targetName="pfs_instr-t" />
+      <config projectName="MySQL" targetName="sql_embedded" />
+      <config projectName="MySQL" targetName="qa_auth_client" />
+      <config projectName="MySQL" targetName="myisamlog" />
+      <config projectName="MySQL" targetName="symlink_libmysqlclient_r.a" />
+      <config projectName="MySQL" targetName="my_print_defaults" />
+      <config projectName="MySQL" targetName="simple-t" />
+      <config projectName="MySQL" targetName="distclean" />
+      <config projectName="MySQL" targetName="myisampack" />
+      <config projectName="MySQL" targetName="partition_embedded" />
+      <config projectName="MySQL" targetName="INFO_BIN" />
+      <config projectName="MySQL" targetName="resolve_stack_dump" />
+      <config projectName="MySQL" targetName="mysqldump" />
+      <config projectName="MySQL" targetName="myisammrg" />
+      <config projectName="MySQL" targetName="mysql_tzinfo_to_sql" />
+      <config projectName="MySQL" targetName="ctags" />
+      <config projectName="MySQL" targetName="pfs_instr_class-t" />
+      <config projectName="MySQL" targetName="pfs_host-oom-t" />
+      <config projectName="MySQL" targetName="rpl" />
+      <config projectName="MySQL" targetName="comp_sql" />
+      <config projectName="MySQL" targetName="mysqlcheck" />
+      <config projectName="MySQL" targetName="heap_embedded" />
+      <config projectName="MySQL" targetName="innobase" />
+      <config projectName="MySQL" targetName="yassl" />
+      <config projectName="MySQL" targetName="mysqlimport" />
+      <config projectName="MySQL" targetName="myisam_embedded" />
+      <config projectName="MySQL" targetName="abi_check" />
+      <config projectName="MySQL" targetName="INFO_SRC" />
+      <config projectName="MySQL" targetName="pfs_connect_attr-t" />
+      <config projectName="MySQL" targetName="mysql" />
+      <config projectName="MySQL" targetName="myisamchk" />
+      <config projectName="MySQL" targetName="sql" />
+      <config projectName="MySQL" targetName="pfs_server_stubs" />
+      <config projectName="MySQL" targetName="mysql_client_test_embedded" />
+      <config projectName="MySQL" targetName="basic-t" />
+      <config projectName="MySQL" targetName="mysql_client_test" />
+      <config projectName="MySQL" targetName="udf_example" />
+      <config projectName="MySQL" targetName="show-dist-name" />
+      <config projectName="MySQL" targetName="mysqltest_embedded" />
+      <config projectName="MySQL" targetName="heap" />
+      <config projectName="MySQL" targetName="dbug" />
+      <config projectName="MySQL" targetName="semisync_slave" />
+      <config projectName="MySQL" targetName="libmysql" />
+      <config projectName="MySQL" targetName="mysqlslap" />
+      <config projectName="MySQL" targetName="no_plan-t" />
+      <config projectName="MySQL" targetName="pfs_instr-oom-t" />
+      <config projectName="MySQL" targetName="blackhole" />
+      <config projectName="MySQL" targetName="pfs_user-oom-t" />
+      <config projectName="MySQL" targetName="gen_lex_hash" />
+      <config projectName="MySQL" targetName="skip-t" />
+      <config projectName="MySQL" targetName="queues" />
+      <config projectName="MySQL" targetName="csv" />
+      <config projectName="MySQL" targetName="federated" />
+      <config projectName="MySQL" targetName="binlog" />
+      <config projectName="MySQL" targetName="ftexample" />
+      <config projectName="MySQL" targetName="GenFixPrivs" />
+      <config projectName="MySQL" targetName="GenDigestServerSource" />
+      <config projectName="MySQL" targetName="mysqlserver" />
+      <config projectName="MySQL" targetName="gen_lex_token" />
+      <config projectName="MySQL" targetName="abi_check_all" />
+      <config projectName="MySQL" targetName="replace" />
+      <config projectName="MySQL" targetName="mysqladmin" />
+      <config projectName="MySQL" targetName="mysql_no_login" />
+      <config projectName="MySQL" targetName="myisammrg_embedded" />
+      <config projectName="MySQL" targetName="comp_err" />
+      <config projectName="MySQL" targetName="symlink_libmysqlclient_r.dylib" />
+      <config projectName="MySQL" targetName="partition" />
+      <config projectName="MySQL" targetName="mysys_ssl" />
+      <config projectName="MySQL" targetName="dist" />
+      <config projectName="MySQL" targetName="resolveip" />
+      <config projectName="MySQL" targetName="myisam_ftdump" />
+      <config projectName="MySQL" targetName="gen_dtrace_header" />
+      <config projectName="MySQL" targetName="mysqlservices" />
+      <config projectName="MySQL" targetName="mysql_plugin" />
+      <config projectName="MySQL" targetName="mytap" />
+      <config projectName="MySQL" targetName="sqlgunitlib" />
+      <config projectName="MySQL" targetName="pfs-t" />
+      <config projectName="MySQL" targetName="auth_test_plugin" />
+      <config projectName="MySQL" targetName="mysql_upgrade" />
+      <config projectName="MySQL" targetName="mysql_waitpid" />
+      <config projectName="MySQL" targetName="qa_auth_interface" />
+      <config projectName="MySQL" targetName="thr_lock" />
+      <config projectName="MySQL" targetName="symlink_libmysqlclient_r.18.dylib" />
+      <config projectName="MySQL" targetName="qa_auth_server" />
+      <config projectName="MySQL" targetName="innochecksum" />
+      <config projectName="MySQL" targetName="test-unit" />
+      <config projectName="MySQL" targetName="perror" />
+      <config projectName="MySQL" targetName="skip_all-t" />
+      <config projectName="MySQL" targetName="GenServerSource" />
+      <config projectName="MySQL" targetName="hp_test2" />
+      <config projectName="MySQL" targetName="hp_test1" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="962bf4e2-6ec8-4888-9a82-d9214015af71" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/handler.cc" afterPath="$PROJECT_DIR$/sql/handler.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/protocol.cc" afterPath="$PROJECT_DIR$/sql/protocol.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/sql_insert.cc" afterPath="$PROJECT_DIR$/sql/sql_insert.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/sql_parse.cc" afterPath="$PROJECT_DIR$/sql/sql_parse.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/innobase/handler/ha_innodb.cc" afterPath="$PROJECT_DIR$/storage/innobase/handler/ha_innodb.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/innobase/row/row0mysql.cc" afterPath="$PROJECT_DIR$/storage/innobase/row/row0mysql.cc" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="sql_parse.cc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/sql_parse.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="13740">
+              <caret line="916" column="22" lean-forward="false" selection-start-line="916" selection-start-column="22" selection-end-line="916" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sql_insert.cc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/sql_insert.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18750">
+              <caret line="1250" column="0" lean-forward="false" selection-start-line="1250" selection-start-column="0" selection-end-line="1250" selection-end-column="0" />
+              <folding>
+                <element signature="e#28173#28674#0" expanded="false" />
+                <element signature="e#29432#29792#0" expanded="false" />
+                <element signature="e#31153#31807#0" expanded="false" />
+                <element signature="e#33178#33762#0" expanded="false" />
+                <element signature="e#33953#34274#0" expanded="false" />
+                <element signature="e#56644#56978#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="handler.cc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/handler.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109260">
+              <caret line="7284" column="0" lean-forward="false" selection-start-line="7284" selection-start-column="0" selection-end-line="7284" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ha_innodb.cc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storage/innobase/handler/ha_innodb.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101145">
+              <caret line="6743" column="0" lean-forward="false" selection-start-line="6743" selection-start-column="0" selection-end-line="6743" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="row0mysql.cc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storage/innobase/row/row0mysql.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21900">
+              <caret line="1460" column="0" lean-forward="false" selection-start-line="1460" selection-start-column="0" selection-end-line="1460" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql_table.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/mysql/psi/mysql_table.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="930">
+              <caret line="62" column="56" lean-forward="false" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
+              <folding>
+                <element signature="e#2988#3061#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pfs.cc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storage/perfschema/pfs.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="39660">
+              <caret line="2644" column="0" lean-forward="false" selection-start-line="2644" selection-start-column="0" selection-end-line="2644" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sql_class.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/sql_class.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="53355">
+              <caret line="3557" column="0" lean-forward="false" selection-start-line="3557" selection-start-column="0" selection-end-line="3557" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="net_serv.cc" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sql/net_serv.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="516">
+              <caret line="693" column="2" lean-forward="false" selection-start-line="693" selection-start-column="2" selection-end-line="693" selection-end-column="2" />
+              <folding>
+                <element signature="e#18633#18667#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="protocol.cc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/protocol.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7845">
+              <caret line="523" column="0" lean-forward="false" selection-start-line="523" selection-start-column="0" selection-end-line="523" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>user_start_routine</find>
+      <find>debugging</find>
+      <find>create_frm</find>
+      <find>mysql_update</find>
+      <find>on</find>
+      <find>handle_one_connection</find>
+      <find>net_read_raw_loop</find>
+      <find>mysql_insert</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/sql/mysqld.cc" />
+        <option value="$PROJECT_DIR$/include/mysql/psi/mysql_thread.h" />
+        <option value="$PROJECT_DIR$/storage/innobase/srv/srv0start.cc" />
+        <option value="$PROJECT_DIR$/storage/innobase/lock/lock0wait.cc" />
+        <option value="$PROJECT_DIR$/storage/innobase/srv/srv0srv.cc" />
+        <option value="$PROJECT_DIR$/storage/innobase/buf/buf0flu.cc" />
+        <option value="$PROJECT_DIR$/storage/innobase/buf/buf0dump.cc" />
+        <option value="$PROJECT_DIR$/storage/innobase/dict/dict0stats_bg.cc" />
+        <option value="$PROJECT_DIR$/storage/innobase/fts/fts0opt.cc" />
+        <option value="$PROJECT_DIR$/storage/perfschema/pfs.cc" />
+        <option value="$PROJECT_DIR$/vio/viosocket.c" />
+        <option value="$PROJECT_DIR$/sql/table.cc" />
+        <option value="$PROJECT_DIR$/readme.lux.md" />
+        <option value="$PROJECT_DIR$/sql/binlog.cc" />
+        <option value="$PROJECT_DIR$/sql/sql_update.cc" />
+        <option value="$PROJECT_DIR$/procedure.lux.md" />
+        <option value="$PROJECT_DIR$/sql/net_serv.cc" />
+        <option value="$PROJECT_DIR$/file_list.lux.md" />
+        <option value="$PROJECT_DIR$/storage/innobase/row/row0mysql.cc" />
+        <option value="$PROJECT_DIR$/storage/innobase/handler/ha_innodb.cc" />
+        <option value="$PROJECT_DIR$/sql/handler.cc" />
+        <option value="$PROJECT_DIR$/sql/sql_insert.cc" />
+        <option value="$PROJECT_DIR$/sql/protocol.cc" />
+        <option value="$PROJECT_DIR$/sql/sql_parse.cc" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-640" />
+    <option name="y" value="-1057" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MySQL" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysql-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="sql/sql_parse&#9;FILE&#9;file:///Users/nuc/Github/mysql-server/sql/sql_parse.cc&#10;sql_update.cc&#9;FILE&#9;file:///Users/nuc/Github/mysql-server/sql/sql_update.cc&#10;table&#9;FILE&#9;file:///Users/nuc/Github/mysql-server/sql/table.cc&#10;rem0&#9;FILE&#9;file:///Users/nuc/Github/mysql-server/storage/innobase/rem/rem0rec.cc" />
+  </component>
+  <component name="RunManager" selected="Application.strings">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="abi_check" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="abi_check" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="abi_check" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="abi_check_all" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="abi_check_all" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ctags" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="ctags" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="gen_dtrace_header" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="gen_dtrace_header" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="INFO_BIN" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="INFO_BIN" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="INFO_SRC" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="INFO_SRC" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tags" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="tags" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysql" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysql" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysql">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysql_config_editor" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysql_config_editor" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysql_config_editor">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysql_plugin" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysql_plugin" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysql_plugin">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysql_upgrade" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysql_upgrade" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysql_upgrade">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysqladmin" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysqladmin" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysqladmin">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysqlbinlog" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysqlbinlog" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysqlbinlog">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysqlcheck" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysqlcheck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysqlcheck">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysqldump" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysqldump" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysqldump">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysqlimport" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysqlimport" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysqlimport">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysqlshow" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysqlshow" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysqlshow">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysqlslap" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysqlslap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysqlslap">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysqltest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysqltest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysqltest">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="edit" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="edit" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="dbug" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="dbug" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="comp_err" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="comp_err" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="comp_err">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="GenError" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="GenError" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="innochecksum" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="innochecksum" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="innochecksum">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="my_print_defaults" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="my_print_defaults" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="my_print_defaults">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysql_waitpid" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysql_waitpid" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysql_waitpid">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="perror" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="perror" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="perror">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="replace" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="replace" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="replace">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="resolve_stack_dump" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="resolve_stack_dump" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="resolve_stack_dump">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="resolveip" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="resolveip" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="resolveip">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="yassl" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="yassl" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="taocrypt" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="taocrypt" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="clientlib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="clientlib" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="libmysql" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="libmysql" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysqlclient" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysqlclient" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="symlink_libmysqlclient_r.18.dylib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="symlink_libmysqlclient_r.18.dylib" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="symlink_libmysqlclient_r.a" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="symlink_libmysqlclient_r.a" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="symlink_libmysqlclient_r.dylib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="symlink_libmysqlclient_r.dylib" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysqlserver" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysqlserver" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="sql_embedded" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="sql_embedded" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysql_client_test_embedded" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysql_client_test_embedded" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysql_client_test_embedded">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysql_embedded" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysql_embedded" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysql_embedded">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysqltest_embedded" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysqltest_embedded" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysqltest_embedded">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysqlservices" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysqlservices" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="test-mtr" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="test-mtr" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="my_safe_process" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="my_safe_process" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="my_safe_process">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysys" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysys" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="queues" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="queues" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="queues">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="thr_lock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="thr_lock" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="thr_lock">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysys_ssl" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysys_ssl" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="audit_null" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="audit_null" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="auth" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="auth" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="auth_test_plugin" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="auth_test_plugin" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysql_no_login" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysql_no_login" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="qa_auth_client" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="qa_auth_client" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="qa_auth_interface" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="qa_auth_interface" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="qa_auth_server" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="qa_auth_server" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="daemon_example" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="daemon_example" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ftexample" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="ftexample" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="validate_password" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="validate_password" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="semisync_master" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="semisync_master" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="semisync_slave" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="semisync_slave" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="re" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="re" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="re">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="regex" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="regex" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="comp_sql" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="comp_sql" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="comp_sql">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="GenFixPrivs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="GenFixPrivs" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="binlog" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="binlog" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="dist" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="dist" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="distclean" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="distclean" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="gen_lex_hash" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="gen_lex_hash" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="gen_lex_hash">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="gen_lex_token" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="gen_lex_token" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="gen_lex_token">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="GenDigestServerSource" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="GenDigestServerSource" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="GenServerSource" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="GenServerSource" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="master" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="master" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysql_tzinfo_to_sql" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysql_tzinfo_to_sql" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysql_tzinfo_to_sql">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysqld" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysqld" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysqld">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="partition" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="partition" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="partition_embedded" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="partition_embedded" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="rpl" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="rpl" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="show-dist-name" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="show-dist-name" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="slave" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="slave" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="sql" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="sql" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="sqlgunitlib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="sqlgunitlib" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="udf_example" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="udf_example" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="archive" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="archive" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="blackhole" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="blackhole" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="csv" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="csv" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="federated" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="federated" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="heap" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="heap" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="heap_embedded" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="heap_embedded" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="hp_test1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="hp_test1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="hp_test1">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="hp_test2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="hp_test2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="hp_test2">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="innobase" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="innobase" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="myisam" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="myisam" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="myisam_embedded" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="myisam_embedded" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="myisam_ftdump" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="myisam_ftdump" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="myisam_ftdump">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="myisamchk" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="myisamchk" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="myisamchk">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="myisamlog" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="myisamlog" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="myisamlog">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="myisampack" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="myisampack" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="myisampack">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="myisammrg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="myisammrg" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="myisammrg_embedded" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="myisammrg_embedded" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="perfschema" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="perfschema" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="pfs-t" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="pfs-t" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="pfs-t">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="pfs_account-oom-t" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="pfs_account-oom-t" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="pfs_account-oom-t">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="pfs_connect_attr-t" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="pfs_connect_attr-t" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="pfs_connect_attr-t">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="pfs_host-oom-t" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="pfs_host-oom-t" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="pfs_host-oom-t">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="pfs_instr-oom-t" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="pfs_instr-oom-t" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="pfs_instr-oom-t">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="pfs_instr-t" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="pfs_instr-t" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="pfs_instr-t">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="pfs_instr_class-oom-t" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="pfs_instr_class-oom-t" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="pfs_instr_class-oom-t">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="pfs_instr_class-t" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="pfs_instr_class-t" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="pfs_instr_class-t">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="pfs_server_stubs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="pfs_server_stubs" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="pfs_user-oom-t" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="pfs_user-oom-t" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="pfs_user-oom-t">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="conf_to_src" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="conf_to_src" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="conf_to_src">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="strings" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="strings" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="bug25714" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="bug25714" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="bug25714">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mysql_client_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mysql_client_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="mysql_client_test">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="test-unit" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="test-unit" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="no_plan-t" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="no_plan-t" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="no_plan-t">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="simple-t" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="simple-t" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="simple-t">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="skip-t" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="skip-t" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="skip-t">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="skip_all-t" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="skip_all-t" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="skip_all-t">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="todo-t" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="todo-t" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="todo-t">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mytap" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="mytap" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="basic-t" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="basic-t" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MySQL" RUN_TARGET_NAME="basic-t">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="vio" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="vio" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="zlib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MySQL" TARGET_NAME="zlib" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <list size="127">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.abi_check" />
+      <item index="2" class="java.lang.String" itemvalue="Application.abi_check_all" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ctags" />
+      <item index="4" class="java.lang.String" itemvalue="Application.gen_dtrace_header" />
+      <item index="5" class="java.lang.String" itemvalue="Application.INFO_BIN" />
+      <item index="6" class="java.lang.String" itemvalue="Application.INFO_SRC" />
+      <item index="7" class="java.lang.String" itemvalue="Application.tags" />
+      <item index="8" class="java.lang.String" itemvalue="Application.mysql" />
+      <item index="9" class="java.lang.String" itemvalue="Application.mysql_config_editor" />
+      <item index="10" class="java.lang.String" itemvalue="Application.mysql_plugin" />
+      <item index="11" class="java.lang.String" itemvalue="Application.mysql_upgrade" />
+      <item index="12" class="java.lang.String" itemvalue="Application.mysqladmin" />
+      <item index="13" class="java.lang.String" itemvalue="Application.mysqlbinlog" />
+      <item index="14" class="java.lang.String" itemvalue="Application.mysqlcheck" />
+      <item index="15" class="java.lang.String" itemvalue="Application.mysqldump" />
+      <item index="16" class="java.lang.String" itemvalue="Application.mysqlimport" />
+      <item index="17" class="java.lang.String" itemvalue="Application.mysqlshow" />
+      <item index="18" class="java.lang.String" itemvalue="Application.mysqlslap" />
+      <item index="19" class="java.lang.String" itemvalue="Application.mysqltest" />
+      <item index="20" class="java.lang.String" itemvalue="Application.edit" />
+      <item index="21" class="java.lang.String" itemvalue="Application.dbug" />
+      <item index="22" class="java.lang.String" itemvalue="Application.comp_err" />
+      <item index="23" class="java.lang.String" itemvalue="Application.GenError" />
+      <item index="24" class="java.lang.String" itemvalue="Application.innochecksum" />
+      <item index="25" class="java.lang.String" itemvalue="Application.my_print_defaults" />
+      <item index="26" class="java.lang.String" itemvalue="Application.mysql_waitpid" />
+      <item index="27" class="java.lang.String" itemvalue="Application.perror" />
+      <item index="28" class="java.lang.String" itemvalue="Application.replace" />
+      <item index="29" class="java.lang.String" itemvalue="Application.resolve_stack_dump" />
+      <item index="30" class="java.lang.String" itemvalue="Application.resolveip" />
+      <item index="31" class="java.lang.String" itemvalue="Application.yassl" />
+      <item index="32" class="java.lang.String" itemvalue="Application.taocrypt" />
+      <item index="33" class="java.lang.String" itemvalue="Application.clientlib" />
+      <item index="34" class="java.lang.String" itemvalue="Application.libmysql" />
+      <item index="35" class="java.lang.String" itemvalue="Application.mysqlclient" />
+      <item index="36" class="java.lang.String" itemvalue="Application.symlink_libmysqlclient_r.18.dylib" />
+      <item index="37" class="java.lang.String" itemvalue="Application.symlink_libmysqlclient_r.a" />
+      <item index="38" class="java.lang.String" itemvalue="Application.symlink_libmysqlclient_r.dylib" />
+      <item index="39" class="java.lang.String" itemvalue="Application.mysqlserver" />
+      <item index="40" class="java.lang.String" itemvalue="Application.sql_embedded" />
+      <item index="41" class="java.lang.String" itemvalue="Application.mysql_client_test_embedded" />
+      <item index="42" class="java.lang.String" itemvalue="Application.mysql_embedded" />
+      <item index="43" class="java.lang.String" itemvalue="Application.mysqltest_embedded" />
+      <item index="44" class="java.lang.String" itemvalue="Application.mysqlservices" />
+      <item index="45" class="java.lang.String" itemvalue="Application.test-mtr" />
+      <item index="46" class="java.lang.String" itemvalue="Application.my_safe_process" />
+      <item index="47" class="java.lang.String" itemvalue="Application.mysys" />
+      <item index="48" class="java.lang.String" itemvalue="Application.queues" />
+      <item index="49" class="java.lang.String" itemvalue="Application.thr_lock" />
+      <item index="50" class="java.lang.String" itemvalue="Application.mysys_ssl" />
+      <item index="51" class="java.lang.String" itemvalue="Application.audit_null" />
+      <item index="52" class="java.lang.String" itemvalue="Application.auth" />
+      <item index="53" class="java.lang.String" itemvalue="Application.auth_test_plugin" />
+      <item index="54" class="java.lang.String" itemvalue="Application.mysql_no_login" />
+      <item index="55" class="java.lang.String" itemvalue="Application.qa_auth_client" />
+      <item index="56" class="java.lang.String" itemvalue="Application.qa_auth_interface" />
+      <item index="57" class="java.lang.String" itemvalue="Application.qa_auth_server" />
+      <item index="58" class="java.lang.String" itemvalue="Application.daemon_example" />
+      <item index="59" class="java.lang.String" itemvalue="Application.ftexample" />
+      <item index="60" class="java.lang.String" itemvalue="Application.validate_password" />
+      <item index="61" class="java.lang.String" itemvalue="Application.semisync_master" />
+      <item index="62" class="java.lang.String" itemvalue="Application.semisync_slave" />
+      <item index="63" class="java.lang.String" itemvalue="Application.re" />
+      <item index="64" class="java.lang.String" itemvalue="Application.regex" />
+      <item index="65" class="java.lang.String" itemvalue="Application.comp_sql" />
+      <item index="66" class="java.lang.String" itemvalue="Application.GenFixPrivs" />
+      <item index="67" class="java.lang.String" itemvalue="Application.binlog" />
+      <item index="68" class="java.lang.String" itemvalue="Application.dist" />
+      <item index="69" class="java.lang.String" itemvalue="Application.distclean" />
+      <item index="70" class="java.lang.String" itemvalue="Application.gen_lex_hash" />
+      <item index="71" class="java.lang.String" itemvalue="Application.gen_lex_token" />
+      <item index="72" class="java.lang.String" itemvalue="Application.GenDigestServerSource" />
+      <item index="73" class="java.lang.String" itemvalue="Application.GenServerSource" />
+      <item index="74" class="java.lang.String" itemvalue="Application.master" />
+      <item index="75" class="java.lang.String" itemvalue="Application.mysql_tzinfo_to_sql" />
+      <item index="76" class="java.lang.String" itemvalue="Application.mysqld" />
+      <item index="77" class="java.lang.String" itemvalue="Application.partition" />
+      <item index="78" class="java.lang.String" itemvalue="Application.partition_embedded" />
+      <item index="79" class="java.lang.String" itemvalue="Application.rpl" />
+      <item index="80" class="java.lang.String" itemvalue="Application.show-dist-name" />
+      <item index="81" class="java.lang.String" itemvalue="Application.slave" />
+      <item index="82" class="java.lang.String" itemvalue="Application.sql" />
+      <item index="83" class="java.lang.String" itemvalue="Application.sqlgunitlib" />
+      <item index="84" class="java.lang.String" itemvalue="Application.udf_example" />
+      <item index="85" class="java.lang.String" itemvalue="Application.archive" />
+      <item index="86" class="java.lang.String" itemvalue="Application.blackhole" />
+      <item index="87" class="java.lang.String" itemvalue="Application.csv" />
+      <item index="88" class="java.lang.String" itemvalue="Application.federated" />
+      <item index="89" class="java.lang.String" itemvalue="Application.heap" />
+      <item index="90" class="java.lang.String" itemvalue="Application.heap_embedded" />
+      <item index="91" class="java.lang.String" itemvalue="Application.hp_test1" />
+      <item index="92" class="java.lang.String" itemvalue="Application.hp_test2" />
+      <item index="93" class="java.lang.String" itemvalue="Application.innobase" />
+      <item index="94" class="java.lang.String" itemvalue="Application.myisam" />
+      <item index="95" class="java.lang.String" itemvalue="Application.myisam_embedded" />
+      <item index="96" class="java.lang.String" itemvalue="Application.myisam_ftdump" />
+      <item index="97" class="java.lang.String" itemvalue="Application.myisamchk" />
+      <item index="98" class="java.lang.String" itemvalue="Application.myisamlog" />
+      <item index="99" class="java.lang.String" itemvalue="Application.myisampack" />
+      <item index="100" class="java.lang.String" itemvalue="Application.myisammrg" />
+      <item index="101" class="java.lang.String" itemvalue="Application.myisammrg_embedded" />
+      <item index="102" class="java.lang.String" itemvalue="Application.perfschema" />
+      <item index="103" class="java.lang.String" itemvalue="Application.pfs-t" />
+      <item index="104" class="java.lang.String" itemvalue="Application.pfs_account-oom-t" />
+      <item index="105" class="java.lang.String" itemvalue="Application.pfs_connect_attr-t" />
+      <item index="106" class="java.lang.String" itemvalue="Application.pfs_host-oom-t" />
+      <item index="107" class="java.lang.String" itemvalue="Application.pfs_instr-oom-t" />
+      <item index="108" class="java.lang.String" itemvalue="Application.pfs_instr-t" />
+      <item index="109" class="java.lang.String" itemvalue="Application.pfs_instr_class-oom-t" />
+      <item index="110" class="java.lang.String" itemvalue="Application.pfs_instr_class-t" />
+      <item index="111" class="java.lang.String" itemvalue="Application.pfs_server_stubs" />
+      <item index="112" class="java.lang.String" itemvalue="Application.pfs_user-oom-t" />
+      <item index="113" class="java.lang.String" itemvalue="Application.conf_to_src" />
+      <item index="114" class="java.lang.String" itemvalue="Application.strings" />
+      <item index="115" class="java.lang.String" itemvalue="Application.bug25714" />
+      <item index="116" class="java.lang.String" itemvalue="Application.mysql_client_test" />
+      <item index="117" class="java.lang.String" itemvalue="Application.test-unit" />
+      <item index="118" class="java.lang.String" itemvalue="Application.no_plan-t" />
+      <item index="119" class="java.lang.String" itemvalue="Application.simple-t" />
+      <item index="120" class="java.lang.String" itemvalue="Application.skip-t" />
+      <item index="121" class="java.lang.String" itemvalue="Application.skip_all-t" />
+      <item index="122" class="java.lang.String" itemvalue="Application.todo-t" />
+      <item index="123" class="java.lang.String" itemvalue="Application.mytap" />
+      <item index="124" class="java.lang.String" itemvalue="Application.basic-t" />
+      <item index="125" class="java.lang.String" itemvalue="Application.vio" />
+      <item index="126" class="java.lang.String" itemvalue="Application.zlib" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="962bf4e2-6ec8-4888-9a82-d9214015af71" name="Default" comment="" />
+      <created>1527663282810</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527663282810</updated>
+      <workItem from="1527663286345" duration="6570000" />
+      <workItem from="1527695257736" duration="4589000" />
+      <workItem from="1527763322703" duration="9000" />
+      <workItem from="1527922097188" duration="4206000" />
+      <workItem from="1527932502071" duration="249000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="15623000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-640" y="-1057" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16482359" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23003195" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37699682" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/mysqld.cc</url>
+          <line>6119</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/mysqld.cc</url>
+          <line>6051</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/perfschema/pfs.cc</url>
+          <line>1872</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/perfschema/pfs.cc</url>
+          <line>1909</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>910</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>1138</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>6268</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>6390</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/protocol.cc</url>
+          <line>487</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>1769</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/net_serv.cc</url>
+          <line>662</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>970</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>1022</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>1036</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>1210</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>1312</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>1339</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>2292</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>3435</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>3452</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_insert.cc</url>
+          <line>658</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_insert.cc</url>
+          <line>749</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_insert.cc</url>
+          <line>1071</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_insert.cc</url>
+          <line>995</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_insert.cc</url>
+          <line>1644</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_insert.cc</url>
+          <line>1663</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/handler.cc</url>
+          <line>7273</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/include/mysql/psi/mysql_table.h</url>
+          <line>70</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/include/mysql/psi/mysql_table.h</url>
+          <line>69</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/include/mysql/psi/mysql_table.h</url>
+          <line>68</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/include/mysql/psi/mysql_table.h</url>
+          <line>76</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/include/mysql/psi/mysql_table.h</url>
+          <line>81</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/perfschema/pfs.cc</url>
+          <line>2643</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/innobase/handler/ha_innodb.cc</url>
+          <line>6519</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/innobase/handler/ha_innodb.cc</url>
+          <line>6742</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/innobase/handler/ha_innodb.cc</url>
+          <line>6721</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/innobase/handler/ha_innodb.cc</url>
+          <line>6682</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/innobase/handler/ha_innodb.cc</url>
+          <line>6663</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/innobase/handler/ha_innodb.cc</url>
+          <line>6655</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/innobase/handler/ha_innodb.cc</url>
+          <line>6631</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/innobase/handler/ha_innodb.cc</url>
+          <line>6592</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/innobase/handler/ha_innodb.cc</url>
+          <line>6598</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/innobase/handler/ha_innodb.cc</url>
+          <line>6629</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/innobase/row/row0mysql.cc</url>
+          <line>1342</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/innobase/row/row0mysql.cc</url>
+          <line>1344</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/innobase/row/row0mysql.cc</url>
+          <line>1347</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/innobase/row/row0mysql.cc</url>
+          <line>1370</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/innobase/row/row0mysql.cc</url>
+          <line>1448</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/storage/innobase/row/row0mysql.cc</url>
+          <line>1459</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/handler.cc</url>
+          <line>7284</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_insert.cc</url>
+          <line>1920</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_insert.cc</url>
+          <line>1931</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_insert.cc</url>
+          <line>1072</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_insert.cc</url>
+          <line>1215</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_insert.cc</url>
+          <line>1250</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>5145</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>5146</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>6391</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/protocol.cc</url>
+          <line>523</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/protocol.cc</url>
+          <line>507</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sql/sql_parse.cc</url>
+          <line>1770</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="68" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/procedure.lux.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/mysqld.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/sql_parse.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13665">
+          <caret line="911" column="0" lean-forward="false" selection-start-line="911" selection-start-column="0" selection-end-line="911" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3735">
+          <caret line="6" column="61" lean-forward="false" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/innobase/os/os0file.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="5477" column="0" lean-forward="false" selection-start-line="5477" selection-start-column="0" selection-end-line="5477" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/innobase/srv/srv0start.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="484" column="0" lean-forward="false" selection-start-line="484" selection-start-column="0" selection-end-line="484" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/innobase/fil/fil0fil.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="5760" column="0" lean-forward="false" selection-start-line="5760" selection-start-column="0" selection-end-line="5760" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/innobase/lock/lock0wait.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="484" column="13" lean-forward="false" selection-start-line="484" selection-start-column="13" selection-end-line="484" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/innobase/srv/srv0srv.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="2717" column="4" lean-forward="false" selection-start-line="2717" selection-start-column="4" selection-end-line="2717" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/innobase/os/os0thread.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="260" column="0" lean-forward="false" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/innobase/buf/buf0flu.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="2389" column="29" lean-forward="false" selection-start-line="2389" selection-start-column="29" selection-end-line="2389" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/innobase/buf/buf0dump.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="579" column="29" lean-forward="false" selection-start-line="579" selection-start-column="29" selection-end-line="579" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/innobase/dict/dict0stats_bg.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="334" column="16" lean-forward="false" selection-start-line="334" selection-start-column="16" selection-end-line="334" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/innobase/fts/fts0opt.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="2940" column="34" lean-forward="false" selection-start-line="2940" selection-start-column="34" selection-end-line="2940" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/perfschema/pfs_instr.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="923" column="12" lean-forward="false" selection-start-line="923" selection-start-column="12" selection-end-line="923" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/mysql/psi/mysql_thread.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="1161" column="0" lean-forward="false" selection-start-line="1161" selection-start-column="0" selection-end-line="1161" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysys/thr_mutex.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="239" column="0" lean-forward="false" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/innobase/os/os0sync.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/main.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/sql_connect.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14670">
+          <caret line="978" column="0" lean-forward="false" selection-start-line="978" selection-start-column="0" selection-end-line="978" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/my_dbug.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="72" column="32" lean-forward="false" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbug/dbug.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18720">
+          <caret line="1248" column="0" lean-forward="false" selection-start-line="1248" selection-start-column="0" selection-end-line="1248" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/log.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31125">
+          <caret line="2075" column="0" lean-forward="false" selection-start-line="2075" selection-start-column="0" selection-end-line="2075" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/innobase/rem/rem0cmp.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21545">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/innobase/rem/rem0rec.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28820">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/innobase/page/page0cur.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/innobase/page/page0page.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="59" column="43" lean-forward="false" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.lux.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/table.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="2928" column="21" lean-forward="false" selection-start-line="2928" selection-start-column="21" selection-end-line="2928" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/binlog.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="8934" column="9" lean-forward="false" selection-start-line="8934" selection-start-column="9" selection-end-line="8934" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/sql_update.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="1000" column="20" lean-forward="false" selection-start-line="1000" selection-start-column="20" selection-end-line="1000" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Headers/AEInteraction.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="51" lean-forward="false" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/myisam/mi_delete_all.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/myisam/mi_delete.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10985">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/myisam/sort.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="681" column="0" lean-forward="true" selection-start-line="681" selection-start-column="0" selection-end-line="681" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/replication.lux.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/procedure.lux.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/sql_optimizer.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file_list.lux.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="375">
+            <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vio/viosocket.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="838" column="0" lean-forward="false" selection-start-line="838" selection-start-column="0" selection-end-line="838" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/mysqld.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="6051" column="0" lean-forward="false" selection-start-line="6051" selection-start-column="0" selection-end-line="6051" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/mysql/psi/mysql_table.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="56" lean-forward="false" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
+          <folding>
+            <element signature="e#2988#3061#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/perfschema/pfs.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39660">
+          <caret line="2644" column="0" lean-forward="false" selection-start-line="2644" selection-start-column="0" selection-end-line="2644" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/innobase/row/row0mysql.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21900">
+          <caret line="1460" column="0" lean-forward="false" selection-start-line="1460" selection-start-column="0" selection-end-line="1460" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/innobase/handler/ha_innodb.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101145">
+          <caret line="6743" column="0" lean-forward="false" selection-start-line="6743" selection-start-column="0" selection-end-line="6743" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/handler.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109260">
+          <caret line="7284" column="0" lean-forward="false" selection-start-line="7284" selection-start-column="0" selection-end-line="7284" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/sql_insert.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18750">
+          <caret line="1250" column="0" lean-forward="false" selection-start-line="1250" selection-start-column="0" selection-end-line="1250" selection-end-column="0" />
+          <folding>
+            <element signature="e#28173#28674#0" expanded="false" />
+            <element signature="e#29432#29792#0" expanded="false" />
+            <element signature="e#31153#31807#0" expanded="false" />
+            <element signature="e#33178#33762#0" expanded="false" />
+            <element signature="e#33953#34274#0" expanded="false" />
+            <element signature="e#56644#56978#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/sql_class.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53355">
+          <caret line="3557" column="0" lean-forward="false" selection-start-line="3557" selection-start-column="0" selection-end-line="3557" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/protocol.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7845">
+          <caret line="523" column="0" lean-forward="false" selection-start-line="523" selection-start-column="0" selection-end-line="523" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/sql_parse.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13740">
+          <caret line="916" column="22" lean-forward="false" selection-start-line="916" selection-start-column="22" selection-end-line="916" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/net_serv.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="693" column="2" lean-forward="false" selection-start-line="693" selection-start-column="2" selection-end-line="693" selection-end-column="2" />
+          <folding>
+            <element signature="e#18633#18667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
