@@ -22,7 +22,7 @@ Record manager
 
 Created 5/30/1994 Heikki Tuuri
 *************************************************************************/
-
+//lux innodb的物理存储格式
 #include "rem0rec.h"
 
 #ifdef UNIV_NONINL

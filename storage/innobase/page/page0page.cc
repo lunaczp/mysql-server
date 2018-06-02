@@ -23,7 +23,7 @@ Index page routines
 
 Created 2/2/1994 Heikki Tuuri
 *******************************************************/
-
+//lux innodb的page实现
 #define THIS_MODULE
 #include "page0page.h"
 #ifdef UNIV_NONINL
