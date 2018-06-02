@@ -2954,8 +2954,8 @@ File create_frm(THD *thd, const char *name, const char *db,
     uint key_length, tmp_key_length, tmp, csid;
     memset(fileinfo, 0, 64);
     /* header */
-    fileinfo[0]=(uchar) 254;
-    fileinfo[1]= 1;
+    fileinfo[0]=(uchar) 254;//lux always fe
+    fileinfo[1]= 1;//lux always 1
     fileinfo[2]= FRM_VER+3+ MY_TEST(create_info->varchar);
 
     fileinfo[3]= (uchar) ha_legacy_type(
