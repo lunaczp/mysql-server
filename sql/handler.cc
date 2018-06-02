@@ -7257,7 +7257,7 @@ int handler::ha_reset()
 
 
 int handler::ha_write_row(uchar *buf)
-{
+{//lux 存储引擎handler wrapper：insert
   int error;
   Log_func *log_func= Write_rows_log_event::binlog_row_logging_function;
   DBUG_ASSERT(table_share->tmp_table != NO_TMP_TABLE ||
@@ -7271,7 +7271,7 @@ int handler::ha_write_row(uchar *buf)
   mark_trx_read_write();
 
   MYSQL_TABLE_IO_WAIT(m_psi, PSI_TABLE_WRITE_ROW, MAX_KEY, 0,
-    { error= write_row(buf); })
+    { error= write_row(buf); })//lux 调用真正的底层引擎写入，如innodb的write_row
 
   MYSQL_INSERT_ROW_DONE(error);
   if (unlikely(error))

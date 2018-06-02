@@ -6485,7 +6485,7 @@ int
 ha_innobase::write_row(
 /*===================*/
 	uchar*	record)	/*!< in: a row in MySQL format */
-{
+{//lux innodb的write_row上实现。insert的时候会调用。
 	dberr_t		error;
 	int		error_result= 0;
 	ibool		auto_inc_used= FALSE;
@@ -6629,7 +6629,7 @@ no_commit:
 
 	innobase_srv_conc_enter_innodb(prebuilt->trx);
 
-	error = row_insert_for_mysql((byte*) record, prebuilt);
+	error = row_insert_for_mysql((byte*) record, prebuilt);//lux 真正插入一行
 	DEBUG_SYNC(user_thd, "ib_after_row_insert");
 
 	/* Handle duplicate key errors */

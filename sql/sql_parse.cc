@@ -1308,7 +1308,7 @@ bool dispatch_command(enum enum_server_command command, THD *thd,
     mysqld_stmt_reset(thd, packet, packet_length);
     break;
   }
-  case COM_QUERY://lux query
+  case COM_QUERY://lux query，包含了增删改查，进程查看。。。
   {
     DBUG_ASSERT(thd->m_digest == NULL);
     thd->m_digest= & thd->m_digest_state;
@@ -1768,7 +1768,7 @@ done:
   if (thd->killed)
     thd->send_kill_message();
   thd->protocol->end_statement();//lux 返回结果
-  query_cache_end_of_result(thd);
+  query_cache_end_of_result(thd);//lux 清理cache
 
   if (!thd->is_error() && !thd->killed_errno())
     mysql_audit_general(thd, MYSQL_AUDIT_GENERAL_RESULT, 0, 0);

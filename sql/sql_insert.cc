@@ -655,7 +655,7 @@ bool mysql_insert(THD *thd,TABLE_LIST *table_list,
                   List<Item> &update_values,
                   enum_duplicates duplic,
 		  bool ignore)
-{
+{//lux mysql insert wrapper
   int error, res;
   bool err= true;
   bool transactional_table, joins_freed= FALSE;
@@ -1069,7 +1069,7 @@ bool mysql_insert(THD *thd,TABLE_LIST *table_list,
     }
     else
 #endif
-      error= write_record(thd, table, &info, &update);
+      error= write_record(thd, table, &info, &update);//lux 写入
     if (error)
       break;
     thd->get_stmt_da()->inc_current_row_for_warning();
@@ -1216,7 +1216,7 @@ bool mysql_insert(THD *thd,TABLE_LIST *table_list,
     my_ok(thd, info.stats.copied + info.stats.deleted +
                ((thd->client_capabilities & CLIENT_FOUND_ROWS) ?
                 info.stats.touched : info.stats.updated),
-          id);
+          id);//lux 返回成功
   }
   else
   {
@@ -1641,7 +1641,7 @@ static int last_uniq_key(TABLE *table,uint keynr)
 */
 
 int write_record(THD *thd, TABLE *table, COPY_INFO *info, COPY_INFO *update)
-{
+{//lux 写入
   int error, trg_error= 0;
   char *key=0;
   MY_BITMAP *save_read_set, *save_write_set;
@@ -1918,7 +1918,7 @@ int write_record(THD *thd, TABLE *table, COPY_INFO *info, COPY_INFO *update)
         table->write_set != save_write_set)
       table->column_bitmaps_set(save_read_set, save_write_set);
   }
-  else if ((error=table->file->ha_write_row(table->record[0])))
+  else if ((error=table->file->ha_write_row(table->record[0])))//lux 调用handler wrapper,内部会去调用底层的存储引擎的具体实现。
   {
     DEBUG_SYNC(thd, "write_row_noreplace");
     if (!ignore_errors ||

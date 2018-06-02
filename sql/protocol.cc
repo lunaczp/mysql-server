@@ -206,7 +206,7 @@ bool
 net_send_ok(THD *thd,
             uint server_status, uint statement_warn_count,
             ulonglong affected_rows, ulonglong id, const char *message)
-{
+{//lux send ok
   NET *net= &thd->net;
   uchar buff[MYSQL_ERRMSG_SIZE+10],*pos;
   bool error= FALSE;
@@ -508,8 +508,8 @@ void Protocol::end_statement()
     error= send_ok(thd->server_status,
                    thd->get_stmt_da()->statement_warn_count(),
                    thd->get_stmt_da()->affected_rows(),
-                   thd->get_stmt_da()->last_insert_id(),
-                   thd->get_stmt_da()->message());
+                   thd->get_stmt_da()->last_insert_id(),//lux last insert id
+                   thd->get_stmt_da()->message());//lux 发送正常结果
     break;
   case Diagnostics_area::DA_DISABLED:
     break;
@@ -537,7 +537,7 @@ void Protocol::end_statement()
 bool Protocol::send_ok(uint server_status, uint statement_warn_count,
                        ulonglong affected_rows, ulonglong last_insert_id,
                        const char *message)
-{
+{//lux 返回ok
   DBUG_ENTER("Protocol::send_ok");
   const bool retval= 
     net_send_ok(thd, server_status, statement_warn_count,

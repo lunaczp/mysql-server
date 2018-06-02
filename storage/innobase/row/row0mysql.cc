@@ -1284,7 +1284,7 @@ row_insert_for_mysql(
 	byte*		mysql_rec,	/*!< in: row in the MySQL format */
 	row_prebuilt_t*	prebuilt)	/*!< in: prebuilt struct in MySQL
 					handle */
-{
+{//lux 最终的innodb insert实现
 	trx_savept_t	savept;
 	que_thr_t*	thr;
 	dberr_t		err;
