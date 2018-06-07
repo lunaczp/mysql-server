@@ -18,7 +18,7 @@
 __所有的命令执行：增删改查，show xxx，等等都在`sql_parse.cc:mysql_execute_command`__
 
 
-### Insert sql
+### Insert Statement
 - Pre
 ```
 # connect to mysql
@@ -26,7 +26,7 @@ mysql -uroot -h127.0.0.1 -P3330 -p
 ...
 >use test;
 ```
-- execute sql
+- Execute sql
 ```
 >insert into a(`name`) values('zzz');
 ```

@@ -137,7 +137,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="962bf4e2-6ec8-4888-9a82-d9214015af71" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Todo.lux.md" afterPath="$PROJECT_DIR$/Todo.lux.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debug.lux.md" afterPath="$PROJECT_DIR$/debug.lux.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/innodb.lux.md" afterPath="$PROJECT_DIR$/innodb.lux.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/procedure.lux.md" afterPath="$PROJECT_DIR$/procedure.lux.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.lux.md" afterPath="$PROJECT_DIR$/readme.lux.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/replication.lux.md" afterPath="$PROJECT_DIR$/replication.lux.md" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -153,79 +158,90 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sql_parse.cc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql/sql_parse.cc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13740">
-              <caret line="916" column="22" lean-forward="false" selection-start-line="916" selection-start-column="22" selection-end-line="916" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sql_insert.cc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql/sql_insert.cc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18750">
-              <caret line="1250" column="0" lean-forward="false" selection-start-line="1250" selection-start-column="0" selection-end-line="1250" selection-end-column="0" />
-              <folding>
-                <element signature="e#28173#28674#0" expanded="false" />
-                <element signature="e#29432#29792#0" expanded="false" />
-                <element signature="e#31153#31807#0" expanded="false" />
-                <element signature="e#33178#33762#0" expanded="false" />
-                <element signature="e#33953#34274#0" expanded="false" />
-                <element signature="e#56644#56978#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="handler.cc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql/handler.cc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109260">
-              <caret line="7284" column="0" lean-forward="false" selection-start-line="7284" selection-start-column="0" selection-end-line="7284" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ha_innodb.cc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/innobase/handler/ha_innodb.cc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101145">
-              <caret line="6743" column="0" lean-forward="false" selection-start-line="6743" selection-start-column="0" selection-end-line="6743" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="row0mysql.cc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/innobase/row/row0mysql.cc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21900">
-              <caret line="1460" column="0" lean-forward="false" selection-start-line="1460" selection-start-column="0" selection-end-line="1460" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sql_class.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql/sql_class.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54510">
-              <caret line="3634" column="38" lean-forward="false" selection-start-line="3634" selection-start-column="38" selection-end-line="3634" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.lux.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="readme.lux.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.lux.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="90">
-                <caret line="6" column="41" lean-forward="false" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+              <first_editor relative-caret-position="150">
+                <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="debug.lux.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/debug.lux.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="549">
+                <caret line="75" column="67" lean-forward="true" selection-start-line="75" selection-start-column="67" selection-end-line="75" selection-end-column="67" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="replication.lux.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/replication.lux.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="15">
+                <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seconds_behind_master.lux.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/seconds_behind_master.lux.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="procedure.lux.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/procedure.lux.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="165">
+                <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="protocol_basic.lux.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protocol_basic.lux.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file_list.lux.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/file_list.lux.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="204">
+                <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -238,7 +254,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="30">
-                <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+                <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -246,12 +262,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="innodb.lux.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="innodb.lux.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/innodb.lux.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="90">
-                <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <first_editor relative-caret-position="45">
+                <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -301,9 +317,13 @@
         <option value="$PROJECT_DIR$/sql/sql_insert.cc" />
         <option value="$PROJECT_DIR$/sql/protocol.cc" />
         <option value="$PROJECT_DIR$/sql/sql_parse.cc" />
-        <option value="$PROJECT_DIR$/procedure.lux.md" />
-        <option value="$PROJECT_DIR$/readme.lux.md" />
         <option value="$PROJECT_DIR$/storage_engine.lux.md" />
+        <option value="$PROJECT_DIR$/debug.lux.md" />
+        <option value="$PROJECT_DIR$/Todo.lux.md" />
+        <option value="$PROJECT_DIR$/readme.lux.md" />
+        <option value="$PROJECT_DIR$/protocol_basic.lux.md" />
+        <option value="$PROJECT_DIR$/procedure.lux.md" />
+        <option value="$PROJECT_DIR$/replication.lux.md" />
         <option value="$PROJECT_DIR$/innodb.lux.md" />
       </list>
     </option>
@@ -345,6 +365,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mysql-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MySQL" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysql-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docLux" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1023,12 +1057,12 @@
       <workItem from="1527763322703" duration="9000" />
       <workItem from="1527922097188" duration="4206000" />
       <workItem from="1527932502071" duration="5037000" />
-      <workItem from="1528003225609" duration="497000" />
+      <workItem from="1528003225609" duration="1212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20908000" />
+    <option name="totallyTimeSpent" value="21623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-640" y="-1057" width="1920" height="1057" extended-state="6" />
@@ -1372,42 +1406,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sql/sql_parse.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13665">
-          <caret line="911" column="0" lean-forward="false" selection-start-line="911" selection-start-column="0" selection-end-line="911" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3735">
-          <caret line="6" column="61" lean-forward="false" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/innobase/os/os0file.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="5477" column="0" lean-forward="false" selection-start-line="5477" selection-start-column="0" selection-end-line="5477" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/innobase/srv/srv0start.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="484" column="0" lean-forward="false" selection-start-line="484" selection-start-column="0" selection-end-line="484" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/innobase/fil/fil0fil.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="5760" column="0" lean-forward="false" selection-start-line="5760" selection-start-column="0" selection-end-line="5760" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/innobase/lock/lock0wait.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -1597,30 +1595,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/replication.lux.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sql/sql_optimizer.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file_list.lux.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="375">
-            <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1681,21 +1659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/sql_insert.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18750">
-          <caret line="1250" column="0" lean-forward="false" selection-start-line="1250" selection-start-column="0" selection-end-line="1250" selection-end-column="0" />
-          <folding>
-            <element signature="e#28173#28674#0" expanded="false" />
-            <element signature="e#29432#29792#0" expanded="false" />
-            <element signature="e#31153#31807#0" expanded="false" />
-            <element signature="e#33178#33762#0" expanded="false" />
-            <element signature="e#33953#34274#0" expanded="false" />
-            <element signature="e#56644#56978#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sql/protocol.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7845">
@@ -1709,16 +1672,6 @@
         <state relative-caret-position="13740">
           <caret line="916" column="22" lean-forward="false" selection-start-line="916" selection-start-column="22" selection-end-line="916" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/procedure.lux.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="300">
-            <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1740,11 +1693,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.lux.md">
+    <entry file="file://$PROJECT_DIR$/sql/sql_insert.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="1250" column="0" lean-forward="false" selection-start-line="1250" selection-start-column="0" selection-end-line="1250" selection-end-column="0" />
+          <folding>
+            <element signature="e#28173#28674#0" expanded="false" />
+            <element signature="e#29432#29792#0" expanded="false" />
+            <element signature="e#31153#31807#0" expanded="false" />
+            <element signature="e#33178#33762#0" expanded="false" />
+            <element signature="e#33953#34274#0" expanded="false" />
+            <element signature="e#56644#56978#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Todo.lux.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="41" lean-forward="false" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file_list.lux.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="204">
+            <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protocol_basic.lux.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/procedure.lux.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seconds_behind_master.lux.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/replication.lux.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/innodb.lux.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1755,18 +1789,37 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="30">
-            <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/innodb.lux.md">
+    <entry file="file://$PROJECT_DIR$/docLux/mysqld.trace">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5250">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debug.lux.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <first_editor relative-caret-position="549">
+            <caret line="75" column="67" lean-forward="true" selection-start-line="75" selection-start-column="67" selection-end-line="75" selection-end-column="67" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.lux.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
             <folding />
           </first_editor>
           <second_editor />
