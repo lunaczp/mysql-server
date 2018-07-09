@@ -46,6 +46,15 @@ bool show_slave_status(THD* thd, Master_info* mi)
                                 - mi->clock_diff_with_master);
 ```
 
+注：这里体现出了`seconds_behind_master`的不准确性。
+mysql认为，如果
+- sql线程正常
+- sql线程处理完所有的relay log
+- io线程正常
+
+则`seconds_behind_master`为0，这个是不准确的，比如如果主库的dump线程挂了，在从库没有重联之前，`second_behind_master`都是0，而实际上已经出故障了。另外如果网络延迟比较严重，sql线程要等待io线程的情况下，延迟约等于网络延迟，而`second_behind_master`还是0，无法反映真实的情况。
+
+
 From the code, we can see that it relies on `last_master_timestamp` and `clock_diff_with_master`.
 
 ## `clock_diff_with_master`

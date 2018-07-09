@@ -32,7 +32,9 @@ mysql -uroot -h127.0.0.1 -P3330 -p
 ```
 
 - stack trace of server when client execute insert sql.
+
 ![insert trace](./docLux/insert_bt.png)
+
 注：
 - client通过mysql命令行连接到server。server会分配一个新线程来和该client进行后续到交互。（Thread-22）
 - 该线程会阻塞到`do_command`，它从网络读取命令，并解析。（阻塞读）。
